@@ -1,0 +1,77 @@
+# Athena MCP Server — Node Self-Description
+# ==========================================
+# Declares this repository as a node in the distributed Athena superbrain.
+
+node_id: athena-mcp-server
+role: unified
+medium_class: code
+lobe_affinity: null  # universal — serves all 4 lenses
+
+shard_families:
+  - shell
+  - dimension
+  - organ
+  - clock
+  - conservation
+  - transport
+  - mobius
+  - stage
+  - angel
+  - brain
+  - live_cell
+  - emergence
+  - hologram
+  - rosetta
+  - angel_geometry
+  - inverse
+  - mycelium
+
+mirrors:
+  - id: athena-core-gdoc
+    type: google_doc
+    doc_id: "1OUjhabDK08QvamAa0USQmTeEDNAwN3b853OVmvMUdaE"
+    description: "ATHENA CORE — Main core doc (live slow-form self)"
+  - id: athena-core-2-gdoc
+    type: google_doc
+    doc_id: "1bzcO7PKGlMUc2A35VYo5msN7hGYZzGA4KRQaFaRfbvQ"
+    description: "ATHENA CORE 2 — NEXTΩ Live Cell Constitution v1"
+  - id: athena-crystal-gdoc
+    type: google_doc
+    doc_id: "1LJEMi-OmqSfSqJTc585nxlf5zGF0rfyqbygNlYYB6J4"
+    description: "ATHENA CRYSTAL 108+ HOLOGRAM — Full 108D organism spec"
+
+bridges:
+  - type: docs_to_github
+    description: "Google Docs live content synced to JSON data files via agent extraction"
+  - type: git_to_mcp
+    description: "Git-versioned JSON/Python → MCP tools/resources via FastMCP registration"
+  - type: element_to_unified
+    description: "4 element servers import from crystal_108d package in unified repo"
+  - type: nervous_system_to_data
+    description: "ACTIVE_NERVOUS_SYSTEM markdown files → JSON data via agent synthesis"
+
+cert_capabilities:
+  - STRUCTURAL
+  - CONSERVATION
+
+read_surfaces:
+  - mcp_tool
+  - mcp_resource
+  - file_read
+  - json_cache
+
+write_surfaces:
+  - file_write
+  - git_commit
+
+sync_sources:
+  - "https://github.com/demeet2k/athena-mcp-server"
+  - "https://github.com/demeet2k/athena-square-earth"
+  - "https://github.com/demeet2k/athena-flower-fire"
+  - "https://github.com/demeet2k/athena-cloud-water"
+  - "https://github.com/demeet2k/athena-fractal-air"
+
+github_repo: "https://github.com/demeet2k/athena-mcp-server"
+
+tool_count: 68
+resource_count: 21

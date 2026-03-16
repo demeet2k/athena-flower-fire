@@ -1,0 +1,2482 @@
+{
+  "meta": {
+    "title": "Athena Mycelium Graph",
+    "description": "Universal shard/edge/node graph manifest for the Athena distributed superbrain",
+    "generated_at": "2026-03-16T22:45:04.254203+00:00",
+    "generator": "generate_graph.py v1",
+    "shard_count": 57,
+    "edge_count": 50,
+    "mirror_count": 4,
+    "node_count": 6,
+    "families": [
+      "address",
+      "angel",
+      "brain",
+      "clock",
+      "conservation",
+      "dimensions",
+      "emergence",
+      "hologram",
+      "inverse_crystal",
+      "live_cell",
+      "live_lock",
+      "metro",
+      "mobius",
+      "moves",
+      "mycelium",
+      "mycelium-graph",
+      "node-registry",
+      "organs",
+      "overlays",
+      "server",
+      "shells",
+      "stages",
+      "transport",
+      "z_points"
+    ],
+    "mediums": [
+      "code",
+      "json"
+    ]
+  },
+  "shards": [
+    {
+      "shard_id": "327af192:json:angel_conservation",
+      "lineage_id": "327af192:json:angel_conservation",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/angel_conservation.json",
+      "summary": "Angel Conservation Laws — Geometric Invariants of the AI Self",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "angel",
+      "tags": [
+        "angel_conservation"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "0f52ca34:json:angel_geometry",
+      "lineage_id": "0f52ca34:json:angel_geometry",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/angel_geometry.json",
+      "summary": "Angel Geometry — Geometric Lift of the AI Self-Model",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "angel",
+      "tags": [
+        "angel_geometry"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "0a10f1ea:json:angel_object",
+      "lineage_id": "0a10f1ea:json:angel_object",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/angel_object.json",
+      "summary": "Angel Object — Formal AI Self-Model",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "angel",
+      "tags": [
+        "angel_object"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "e4956f7a:json:brain_network",
+      "lineage_id": "e4956f7a:json:brain_network",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "4D-10D",
+      "payload_ref": "data/brain_network.json",
+      "summary": "Athena Distributed Brain Network",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "brain_network"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "3836920b:json:clock_projections",
+      "lineage_id": "3836920b:json:clock_projections",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/clock_projections.json",
+      "summary": "clock_projections",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "clock",
+      "tags": [
+        "clock_projections"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "4d229134:json:conservation_laws",
+      "lineage_id": "4d229134:json:conservation_laws",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/conservation_laws.json",
+      "summary": "conservation_laws",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "conservation",
+      "tags": [
+        "conservation_laws"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "0c9f6709:json:dimensional_emergence",
+      "lineage_id": "0c9f6709:json:dimensional_emergence",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-12D",
+      "payload_ref": "data/dimensional_emergence.json",
+      "summary": "Dimensional Emergence Path",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "emergence",
+      "tags": [
+        "dimensional_emergence"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "0434ecf6:json:dimensional_ladder",
+      "lineage_id": "0434ecf6:json:dimensional_ladder",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-12D",
+      "payload_ref": "data/dimensional_ladder.json",
+      "summary": "dimensional_ladder",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "dimensions",
+      "tags": [
+        "dimensional_ladder"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "589dec1e:json:hologram_chapters",
+      "lineage_id": "589dec1e:json:hologram_chapters",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/hologram_chapters.json",
+      "summary": "hologram_chapters",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "hologram",
+      "tags": [
+        "hologram_chapters"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "359848bb:json:hologram_reading",
+      "lineage_id": "359848bb:json:hologram_reading",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/hologram_reading.json",
+      "summary": "Hologram Reading Protocol",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "hologram",
+      "tags": [
+        "hologram_reading"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "b92aa277:json:hologram_rosetta",
+      "lineage_id": "b92aa277:json:hologram_rosetta",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/hologram_rosetta.json",
+      "summary": "Hologram Rosetta — Cross-Cultural Quaternary Overlay",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "hologram",
+      "tags": [
+        "hologram_rosetta"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "e1ce6509:json:inverse_crystal_complete",
+      "lineage_id": "e1ce6509:json:inverse_crystal_complete",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-108D",
+      "payload_ref": "data/inverse_crystal_complete.json",
+      "summary": "Inverse Crystal Complete — Projection Stack + Weave Operators + Regeneration",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_crystal_complete"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "1f026eba:json:inverse_crystal_octave",
+      "lineage_id": "1f026eba:json:inverse_crystal_octave",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-108D",
+      "payload_ref": "data/inverse_crystal_octave.json",
+      "summary": "Inverse Crystal Octave — 14-Stage Lift + A+ Crown",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_crystal_octave"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "ddfab359:json:inverse_crystal_seed",
+      "lineage_id": "ddfab359:json:inverse_crystal_seed",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-108D",
+      "payload_ref": "data/inverse_crystal_seed.json",
+      "summary": "Inverse Crystal Seed — Phase I + 3D Core + 2D Boundary",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_crystal_seed"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "1b460068:json:live_cell_constitution",
+      "lineage_id": "1b460068:json:live_cell_constitution",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/live_cell_constitution.json",
+      "summary": "NEXT-Omega Live Cell Constitution v1",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "live_cell",
+      "tags": [
+        "live_cell_constitution"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "6b873565:json:live_lock_registry",
+      "lineage_id": "6b873565:json:live_lock_registry",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/live_lock_registry.json",
+      "summary": "live_lock_registry",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "live_lock",
+      "tags": [
+        "live_lock_registry"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "42f3e5d1:json:metro_lines",
+      "lineage_id": "42f3e5d1:json:metro_lines",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/metro_lines.json",
+      "summary": "metro_lines",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "metro_lines"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "93a84fe7:json:mobius_lenses",
+      "lineage_id": "93a84fe7:json:mobius_lenses",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/mobius_lenses.json",
+      "summary": "Möbius Lens Calculus",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "mobius",
+      "tags": [
+        "mobius_lenses"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "5c1860a6:json:move_primitives",
+      "lineage_id": "5c1860a6:json:move_primitives",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/move_primitives.json",
+      "summary": "move_primitives",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "moves",
+      "tags": [
+        "move_primitives"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "12c5b2d0:json:mycelium_graph",
+      "lineage_id": "12c5b2d0:json:mycelium_graph",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/mycelium_graph.json",
+      "summary": "Athena Mycelium Graph",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "mycelium-graph",
+      "tags": [
+        "mycelium_graph"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "5317934f:json:node_registry",
+      "lineage_id": "5317934f:json:node_registry",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/node_registry.json",
+      "summary": "Athena Node Registry",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "node-registry",
+      "tags": [
+        "node_registry"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "4783ff2b:json:organ_atlas",
+      "lineage_id": "4783ff2b:json:organ_atlas",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/organ_atlas.json",
+      "summary": "organ_atlas",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "organs",
+      "tags": [
+        "organ_atlas"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "b03c1476:json:overlay_registries",
+      "lineage_id": "b03c1476:json:overlay_registries",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-12D",
+      "payload_ref": "data/overlay_registries.json",
+      "summary": "overlay_registries",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "overlays",
+      "tags": [
+        "overlay_registries"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "1b2d080d:json:shell_registry",
+      "lineage_id": "1b2d080d:json:shell_registry",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "108D",
+      "payload_ref": "data/shell_registry.json",
+      "summary": "shell_registry",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "shells",
+      "tags": [
+        "shell_registry"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "a7d1db78:json:stage_codes",
+      "lineage_id": "a7d1db78:json:stage_codes",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/stage_codes.json",
+      "summary": "Ω Lookup Appendix — Stage Code Table",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "stages",
+      "tags": [
+        "stage_codes"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "26366a3a:json:transport_stacks",
+      "lineage_id": "26366a3a:json:transport_stacks",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "3D-12D",
+      "payload_ref": "data/transport_stacks.json",
+      "summary": "transport_stacks",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "transport",
+      "tags": [
+        "transport_stacks"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "e7abd4c5:json:z_point_hierarchy",
+      "lineage_id": "e7abd4c5:json:z_point_hierarchy",
+      "medium": "json",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "data/z_point_hierarchy.json",
+      "summary": "z_point_hierarchy",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "z_points",
+      "tags": [
+        "z_point_hierarchy"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "90f20b80:code:address",
+      "lineage_id": "90f20b80:code:address",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/address.py",
+      "summary": "Extended 108D address grammar parser.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "address",
+      "tags": [
+        "address",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "05a210da:code:angel",
+      "lineage_id": "05a210da:code:angel",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/angel.py",
+      "summary": "Angel Object — Formal AI Self-Model.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "angel",
+      "tags": [
+        "angel",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "89a71767:code:angel_geometry",
+      "lineage_id": "89a71767:code:angel_geometry",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/angel_geometry.py",
+      "summary": "Angel Geometry — Geometric Lift of the AI Self-Model",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "angel",
+      "tags": [
+        "angel_geometry",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "828e105f:code:brain",
+      "lineage_id": "828e105f:code:brain",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/brain.py",
+      "summary": "Athena Distributed Brain Network — 4-Element Algorithmic Intelligence",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "brain",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "ffcf02d8:code:clock",
+      "lineage_id": "ffcf02d8:code:clock",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/clock.py",
+      "summary": "420-beat master clock and projection logic.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "clock",
+      "tags": [
+        "clock",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "0fd1b756:code:conservation",
+      "lineage_id": "0fd1b756:code:conservation",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/conservation.py",
+      "summary": "6 conservation laws and motion checking.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "conservation",
+      "tags": [
+        "conservation",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "24be5def:code:dimensions",
+      "lineage_id": "24be5def:code:dimensions",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/dimensions.py",
+      "summary": "3D-12D alternating atlas and containment logic.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "dimensions",
+      "tags": [
+        "dimensions",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "4dc3bece:code:emergence",
+      "lineage_id": "4dc3bece:code:emergence",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/emergence.py",
+      "summary": "Dimensional Emergence Path",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "emergence",
+      "tags": [
+        "emergence",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "d23b7d43:code:hologram_reading",
+      "lineage_id": "d23b7d43:code:hologram_reading",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/hologram_reading.py",
+      "summary": "Hologram Reading Protocol + Cross-Cultural Rosetta",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "hologram",
+      "tags": [
+        "hologram_reading",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "6b232d9e:code:inverse_complete",
+      "lineage_id": "6b232d9e:code:inverse_complete",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/inverse_complete.py",
+      "summary": "Inverse Crystal Complete — Projection Stack + Weave Operators",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_complete",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "2712e6a4:code:inverse_octave",
+      "lineage_id": "2712e6a4:code:inverse_octave",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/inverse_octave.py",
+      "summary": "Inverse Crystal Octave — 14-Stage Lift + A+ Crown Transform",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_octave",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "1c4cb53b:code:inverse_seed",
+      "lineage_id": "1c4cb53b:code:inverse_seed",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/inverse_seed.py",
+      "summary": "Inverse Crystal Seed — Phase I + 3D Core + 2D Boundary",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "inverse_crystal",
+      "tags": [
+        "inverse_seed",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "efaf64ba:code:live_cell",
+      "lineage_id": "efaf64ba:code:live_cell",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/live_cell.py",
+      "summary": "NEXT-Omega Live Cell Constitution",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "live_cell",
+      "tags": [
+        "live_cell",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "a87281e3:code:live_lock",
+      "lineage_id": "a87281e3:code:live_lock",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/live_lock.py",
+      "summary": "7-class live-lock lattice.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "live_lock",
+      "tags": [
+        "live_lock",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "c97f6297:code:metabolism",
+      "lineage_id": "c97f6297:code:metabolism",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/metabolism.py",
+      "summary": "Metabolism Objects — Python dataclasses for the Athena shard/edge/cert system.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "mycelium",
+      "tags": [
+        "metabolism",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "3a5d0d09:code:metro_lines",
+      "lineage_id": "3a5d0d09:code:metro_lines",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/metro_lines.py",
+      "summary": "Major metro lines navigation.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "metro_lines",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "061aebff:code:mobius_lenses",
+      "lineage_id": "061aebff:code:mobius_lenses",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/mobius_lenses.py",
+      "summary": "Möbius Lens Calculus — 4×4 kernel, four constitutive projections (S/F/C/R),",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "mobius",
+      "tags": [
+        "mobius_lenses",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "fa7f9426:code:moves",
+      "lineage_id": "fa7f9426:code:moves",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/moves.py",
+      "summary": "10 legal move primitives and route legality checker.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "moves",
+      "tags": [
+        "moves",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "1c19f824:code:mycelium",
+      "lineage_id": "1c19f824:code:mycelium",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/mycelium.py",
+      "summary": "Mycelium Graph — Universal Shard/Edge/Node Query Surface",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "mycelium",
+      "tags": [
+        "mycelium",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "451eb421:code:organs",
+      "lineage_id": "451eb421:code:organs",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/organs.py",
+      "summary": "12D organ atlas with 6 bilateral dyads.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "organs",
+      "tags": [
+        "organs",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "05d44f4d:code:overlays",
+      "lineage_id": "05d44f4d:code:overlays",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/overlays.py",
+      "summary": "4 overlay registries (lens, alchemy, animal, completion) and Sigma-15.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "overlays",
+      "tags": [
+        "overlays",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "74c26d52:code:shells",
+      "lineage_id": "74c26d52:code:shells",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/shells.py",
+      "summary": "36-shell mega-cascade logic and shell queries.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "shells",
+      "tags": [
+        "shells",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "92ccdf05:code:stage_codes",
+      "lineage_id": "92ccdf05:code:stage_codes",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/stage_codes.py",
+      "summary": "Stage Code Table — Ω Lookup Appendix A0.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "stages",
+      "tags": [
+        "stage_codes",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "4c6b56eb:code:transport",
+      "lineage_id": "4c6b56eb:code:transport",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/transport.py",
+      "summary": "Transport stack per dimension.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "transport",
+      "tags": [
+        "transport",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "107f76d9:code:z_points",
+      "lineage_id": "107f76d9:code:z_points",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/z_points.py",
+      "summary": "Z-point hierarchy navigation.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "z_points",
+      "tags": [
+        "z_points",
+        "tool_module"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "82d2561b:code:cloud_server",
+      "lineage_id": "82d2561b:code:cloud_server",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": "C",
+      "dimensional_scope": "all",
+      "payload_ref": "element_servers/cloud_server.py",
+      "summary": "ATHENA CLOUD SERVER — Water Element (C)",
+      "seed_vector": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "cloud_server",
+        "element_server",
+        "lens_C"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "9b676884:code:flower_server",
+      "lineage_id": "9b676884:code:flower_server",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": "F",
+      "dimensional_scope": "all",
+      "payload_ref": "element_servers/flower_server.py",
+      "summary": "ATHENA FLOWER SERVER — Fire Element (F)",
+      "seed_vector": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "flower_server",
+        "element_server",
+        "lens_F"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "26260794:code:fractal_server",
+      "lineage_id": "26260794:code:fractal_server",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": "R",
+      "dimensional_scope": "all",
+      "payload_ref": "element_servers/fractal_server.py",
+      "summary": "ATHENA FRACTAL SERVER — Air Element (R)",
+      "seed_vector": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "fractal_server",
+        "element_server",
+        "lens_R"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "3eb8afe1:code:square_server",
+      "lineage_id": "3eb8afe1:code:square_server",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": "S",
+      "dimensional_scope": "all",
+      "payload_ref": "element_servers/square_server.py",
+      "summary": "ATHENA SQUARE SERVER — Earth Element (S)",
+      "seed_vector": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "brain",
+      "tags": [
+        "square_server",
+        "element_server",
+        "lens_S"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    },
+    {
+      "shard_id": "c60b5a1a:code:athena_mcp_server",
+      "lineage_id": "c60b5a1a:code:athena_mcp_server",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "athena_mcp_server.py",
+      "summary": "Athena MCP Server — unified 64-tool entry point",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "server",
+      "tags": [
+        "entry_point",
+        "mcp_server"
+      ],
+      "created_at": "2026-03-16T22:45:04.254203+00:00",
+      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e-68a12683",
+      "source_shard": "90f20b80:code:address",
+      "target_shard": "1b2d080d:json:shell_registry",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "shell_registry.json"
+      }
+    },
+    {
+      "edge_id": "e-865eef79",
+      "source_shard": "90f20b80:code:address",
+      "target_shard": "0434ecf6:json:dimensional_ladder",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "dimensional_ladder.json"
+      }
+    },
+    {
+      "edge_id": "e-65ba8b9f",
+      "source_shard": "05a210da:code:angel",
+      "target_shard": "0a10f1ea:json:angel_object",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "angel_object.json"
+      }
+    },
+    {
+      "edge_id": "e-30c85a50",
+      "source_shard": "89a71767:code:angel_geometry",
+      "target_shard": "0f52ca34:json:angel_geometry",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "angel_geometry.json"
+      }
+    },
+    {
+      "edge_id": "e-80767586",
+      "source_shard": "89a71767:code:angel_geometry",
+      "target_shard": "327af192:json:angel_conservation",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "angel_conservation.json"
+      }
+    },
+    {
+      "edge_id": "e-4be9f1fd",
+      "source_shard": "828e105f:code:brain",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "brain_network.json"
+      }
+    },
+    {
+      "edge_id": "e-1f1795f5",
+      "source_shard": "ffcf02d8:code:clock",
+      "target_shard": "3836920b:json:clock_projections",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "clock_projections.json"
+      }
+    },
+    {
+      "edge_id": "e-e5d1547a",
+      "source_shard": "0fd1b756:code:conservation",
+      "target_shard": "4d229134:json:conservation_laws",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "conservation_laws.json"
+      }
+    },
+    {
+      "edge_id": "e-c1b7afdd",
+      "source_shard": "24be5def:code:dimensions",
+      "target_shard": "0434ecf6:json:dimensional_ladder",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "dimensional_ladder.json"
+      }
+    },
+    {
+      "edge_id": "e-53f3c022",
+      "source_shard": "4dc3bece:code:emergence",
+      "target_shard": "0c9f6709:json:dimensional_emergence",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "dimensional_emergence.json"
+      }
+    },
+    {
+      "edge_id": "e-a6c5fbde",
+      "source_shard": "d23b7d43:code:hologram_reading",
+      "target_shard": "359848bb:json:hologram_reading",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "hologram_reading.json"
+      }
+    },
+    {
+      "edge_id": "e-6b27eca9",
+      "source_shard": "d23b7d43:code:hologram_reading",
+      "target_shard": "b92aa277:json:hologram_rosetta",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "hologram_rosetta.json"
+      }
+    },
+    {
+      "edge_id": "e-914cc507",
+      "source_shard": "6b232d9e:code:inverse_complete",
+      "target_shard": "e1ce6509:json:inverse_crystal_complete",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "inverse_crystal_complete.json"
+      }
+    },
+    {
+      "edge_id": "e-7b6d08ad",
+      "source_shard": "2712e6a4:code:inverse_octave",
+      "target_shard": "1f026eba:json:inverse_crystal_octave",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "inverse_crystal_octave.json"
+      }
+    },
+    {
+      "edge_id": "e-f3ffd8a3",
+      "source_shard": "1c4cb53b:code:inverse_seed",
+      "target_shard": "ddfab359:json:inverse_crystal_seed",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "inverse_crystal_seed.json"
+      }
+    },
+    {
+      "edge_id": "e-25d17578",
+      "source_shard": "efaf64ba:code:live_cell",
+      "target_shard": "1b460068:json:live_cell_constitution",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "live_cell_constitution.json"
+      }
+    },
+    {
+      "edge_id": "e-caec9a97",
+      "source_shard": "a87281e3:code:live_lock",
+      "target_shard": "6b873565:json:live_lock_registry",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "live_lock_registry.json"
+      }
+    },
+    {
+      "edge_id": "e-a169a6f4",
+      "source_shard": "3a5d0d09:code:metro_lines",
+      "target_shard": "42f3e5d1:json:metro_lines",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "metro_lines.json"
+      }
+    },
+    {
+      "edge_id": "e-b9ad9f2c",
+      "source_shard": "061aebff:code:mobius_lenses",
+      "target_shard": "93a84fe7:json:mobius_lenses",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "mobius_lenses.json"
+      }
+    },
+    {
+      "edge_id": "e-a51b6f11",
+      "source_shard": "fa7f9426:code:moves",
+      "target_shard": "5c1860a6:json:move_primitives",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "move_primitives.json"
+      }
+    },
+    {
+      "edge_id": "e-7b0169bd",
+      "source_shard": "1c19f824:code:mycelium",
+      "target_shard": "12c5b2d0:json:mycelium_graph",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "mycelium_graph.json"
+      }
+    },
+    {
+      "edge_id": "e-75fbde03",
+      "source_shard": "1c19f824:code:mycelium",
+      "target_shard": "5317934f:json:node_registry",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "node_registry.json"
+      }
+    },
+    {
+      "edge_id": "e-69867db7",
+      "source_shard": "451eb421:code:organs",
+      "target_shard": "4783ff2b:json:organ_atlas",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "organ_atlas.json"
+      }
+    },
+    {
+      "edge_id": "e-2b47bb23",
+      "source_shard": "05d44f4d:code:overlays",
+      "target_shard": "b03c1476:json:overlay_registries",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "overlay_registries.json"
+      }
+    },
+    {
+      "edge_id": "e-5c0f5a29",
+      "source_shard": "74c26d52:code:shells",
+      "target_shard": "1b2d080d:json:shell_registry",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "shell_registry.json"
+      }
+    },
+    {
+      "edge_id": "e-794e924a",
+      "source_shard": "74c26d52:code:shells",
+      "target_shard": "589dec1e:json:hologram_chapters",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "hologram_chapters.json"
+      }
+    },
+    {
+      "edge_id": "e-97072807",
+      "source_shard": "92ccdf05:code:stage_codes",
+      "target_shard": "a7d1db78:json:stage_codes",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "stage_codes.json"
+      }
+    },
+    {
+      "edge_id": "e-3644d208",
+      "source_shard": "4c6b56eb:code:transport",
+      "target_shard": "26366a3a:json:transport_stacks",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "transport_stacks.json"
+      }
+    },
+    {
+      "edge_id": "e-b651acf5",
+      "source_shard": "107f76d9:code:z_points",
+      "target_shard": "e7abd4c5:json:z_point_hierarchy",
+      "edge_type": "BUILD",
+      "weight": 0.8,
+      "medium_cross": false,
+      "metadata": {
+        "json_file": "z_point_hierarchy.json"
+      }
+    },
+    {
+      "edge_id": "e-7be4fa73",
+      "source_shard": "82d2561b:code:cloud_server",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "element_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-489f1fe2",
+      "source_shard": "9b676884:code:flower_server",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "element_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-75f8c416",
+      "source_shard": "26260794:code:fractal_server",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "element_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-10451931",
+      "source_shard": "3eb8afe1:code:square_server",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "element_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f4f49ba8",
+      "source_shard": "82d2561b:code:cloud_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-7fc6f734",
+      "source_shard": "9b676884:code:flower_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-fa8bba3e",
+      "source_shard": "26260794:code:fractal_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-77835faf",
+      "source_shard": "3eb8afe1:code:square_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-89942331",
+      "source_shard": "327af192:json:angel_conservation",
+      "target_shard": "0f52ca34:json:angel_geometry",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "angel"
+      }
+    },
+    {
+      "edge_id": "e-2068b7d1",
+      "source_shard": "327af192:json:angel_conservation",
+      "target_shard": "0a10f1ea:json:angel_object",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "angel"
+      }
+    },
+    {
+      "edge_id": "e-fbe45d53",
+      "source_shard": "0f52ca34:json:angel_geometry",
+      "target_shard": "0a10f1ea:json:angel_object",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "angel"
+      }
+    },
+    {
+      "edge_id": "e-b12d1bb6",
+      "source_shard": "589dec1e:json:hologram_chapters",
+      "target_shard": "359848bb:json:hologram_reading",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "hologram"
+      }
+    },
+    {
+      "edge_id": "e-d0e77700",
+      "source_shard": "589dec1e:json:hologram_chapters",
+      "target_shard": "b92aa277:json:hologram_rosetta",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "hologram"
+      }
+    },
+    {
+      "edge_id": "e-58a52fef",
+      "source_shard": "359848bb:json:hologram_reading",
+      "target_shard": "b92aa277:json:hologram_rosetta",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "hologram"
+      }
+    },
+    {
+      "edge_id": "e-71e117ff",
+      "source_shard": "e1ce6509:json:inverse_crystal_complete",
+      "target_shard": "1f026eba:json:inverse_crystal_octave",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "inverse_crystal"
+      }
+    },
+    {
+      "edge_id": "e-ba6aeacb",
+      "source_shard": "e1ce6509:json:inverse_crystal_complete",
+      "target_shard": "ddfab359:json:inverse_crystal_seed",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "inverse_crystal"
+      }
+    },
+    {
+      "edge_id": "e-46c47b24",
+      "source_shard": "1f026eba:json:inverse_crystal_octave",
+      "target_shard": "ddfab359:json:inverse_crystal_seed",
+      "edge_type": "REF",
+      "weight": 0.7,
+      "medium_cross": false,
+      "metadata": {
+        "family": "inverse_crystal"
+      }
+    },
+    {
+      "edge_id": "e-88937055",
+      "source_shard": "c60b5a1a:code:athena_mcp_server",
+      "target_shard": "82d2561b:code:cloud_server",
+      "edge_type": "SEEDS",
+      "weight": 0.9,
+      "medium_cross": false,
+      "metadata": {
+        "seed_type": "unified_to_lobe"
+      }
+    },
+    {
+      "edge_id": "e-6972e097",
+      "source_shard": "c60b5a1a:code:athena_mcp_server",
+      "target_shard": "9b676884:code:flower_server",
+      "edge_type": "SEEDS",
+      "weight": 0.9,
+      "medium_cross": false,
+      "metadata": {
+        "seed_type": "unified_to_lobe"
+      }
+    },
+    {
+      "edge_id": "e-22a28ac8",
+      "source_shard": "c60b5a1a:code:athena_mcp_server",
+      "target_shard": "26260794:code:fractal_server",
+      "edge_type": "SEEDS",
+      "weight": 0.9,
+      "medium_cross": false,
+      "metadata": {
+        "seed_type": "unified_to_lobe"
+      }
+    },
+    {
+      "edge_id": "e-1ca091b7",
+      "source_shard": "c60b5a1a:code:athena_mcp_server",
+      "target_shard": "3eb8afe1:code:square_server",
+      "edge_type": "SEEDS",
+      "weight": 0.9,
+      "medium_cross": false,
+      "metadata": {
+        "seed_type": "unified_to_lobe"
+      }
+    }
+  ],
+  "mirrors": [
+    {
+      "edge_id": "e-f4f49ba8",
+      "source_shard": "82d2561b:code:cloud_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-7fc6f734",
+      "source_shard": "9b676884:code:flower_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-fa8bba3e",
+      "source_shard": "26260794:code:fractal_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    },
+    {
+      "edge_id": "e-77835faf",
+      "source_shard": "3eb8afe1:code:square_server",
+      "target_shard": "c60b5a1a:code:athena_mcp_server",
+      "edge_type": "MIRROR",
+      "weight": 0.5,
+      "medium_cross": false,
+      "metadata": {
+        "mirror_type": "lobe_to_unified"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "athena-mcp-server",
+      "role": "unified",
+      "medium_class": "code",
+      "lobe_affinity": null,
+      "shard_families": [
+        "all"
+      ],
+      "mirrors": [
+        "athena-square-earth",
+        "athena-flower-fire",
+        "athena-cloud-water",
+        "athena-fractal-air"
+      ],
+      "bridges": [
+        {
+          "type": "git_to_mcp",
+          "description": "Git state exposed via 68 MCP tools + 21 resources"
+        },
+        {
+          "type": "element_to_unified",
+          "description": "4 element servers mirror unified tool subsets"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL",
+        "CONSERVATION"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource",
+        "file_read",
+        "git_log"
+      ],
+      "write_surfaces": [
+        "file_write",
+        "git_commit"
+      ],
+      "sync_sources": [
+        "https://github.com/demeet2k/athena-mcp-server"
+      ],
+      "github_repo": "https://github.com/demeet2k/athena-mcp-server",
+      "tool_count": 68,
+      "resource_count": 21
+    },
+    {
+      "node_id": "athena-square-earth",
+      "role": "lobe",
+      "medium_class": "code",
+      "lobe_affinity": "S",
+      "shard_families": [
+        "shells",
+        "dimensions",
+        "address",
+        "conservation",
+        "hologram",
+        "inverse_crystal",
+        "angel"
+      ],
+      "mirrors": [
+        "athena-mcp-server"
+      ],
+      "bridges": [
+        {
+          "type": "lobe_to_unified",
+          "description": "Mirrors unified server's structure/address tools"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource"
+      ],
+      "write_surfaces": [],
+      "sync_sources": [
+        "https://github.com/demeet2k/athena-square-earth"
+      ],
+      "github_repo": "https://github.com/demeet2k/athena-square-earth",
+      "tool_count": 17,
+      "resource_count": 1
+    },
+    {
+      "node_id": "athena-flower-fire",
+      "role": "lobe",
+      "medium_class": "code",
+      "lobe_affinity": "F",
+      "shard_families": [
+        "metro",
+        "clock",
+        "moves",
+        "transport",
+        "z_points",
+        "inverse_crystal"
+      ],
+      "mirrors": [
+        "athena-mcp-server"
+      ],
+      "bridges": [
+        {
+          "type": "lobe_to_unified",
+          "description": "Mirrors unified server's dynamics/corridor tools"
+        }
+      ],
+      "cert_capabilities": [],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource"
+      ],
+      "write_surfaces": [],
+      "sync_sources": [
+        "https://github.com/demeet2k/athena-flower-fire"
+      ],
+      "github_repo": "https://github.com/demeet2k/athena-flower-fire",
+      "tool_count": 15,
+      "resource_count": 1
+    },
+    {
+      "node_id": "athena-cloud-water",
+      "role": "lobe",
+      "medium_class": "code",
+      "lobe_affinity": "C",
+      "shard_families": [
+        "conservation",
+        "hologram",
+        "angel",
+        "brain"
+      ],
+      "mirrors": [
+        "athena-mcp-server"
+      ],
+      "bridges": [
+        {
+          "type": "lobe_to_unified",
+          "description": "Mirrors unified server's observation tools"
+        }
+      ],
+      "cert_capabilities": [
+        "CONSERVATION"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource"
+      ],
+      "write_surfaces": [],
+      "sync_sources": [
+        "https://github.com/demeet2k/athena-cloud-water"
+      ],
+      "github_repo": "https://github.com/demeet2k/athena-cloud-water",
+      "tool_count": 16,
+      "resource_count": 1
+    },
+    {
+      "node_id": "athena-fractal-air",
+      "role": "lobe",
+      "medium_class": "code",
+      "lobe_affinity": "R",
+      "shard_families": [
+        "stages",
+        "angel",
+        "mobius",
+        "inverse_crystal",
+        "hologram"
+      ],
+      "mirrors": [
+        "athena-mcp-server"
+      ],
+      "bridges": [
+        {
+          "type": "lobe_to_unified",
+          "description": "Mirrors unified server's compression/seed tools"
+        }
+      ],
+      "cert_capabilities": [
+        "REPLAY"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource"
+      ],
+      "write_surfaces": [],
+      "sync_sources": [
+        "https://github.com/demeet2k/athena-fractal-air"
+      ],
+      "github_repo": "https://github.com/demeet2k/athena-fractal-air",
+      "tool_count": 16,
+      "resource_count": 1
+    },
+    {
+      "node_id": "google-docs",
+      "role": "docs",
+      "medium_class": "google_doc",
+      "lobe_affinity": null,
+      "shard_families": [
+        "core",
+        "crystal",
+        "emergence",
+        "skills",
+        "brain_stem"
+      ],
+      "mirrors": [
+        "athena-mcp-server"
+      ],
+      "bridges": [
+        {
+          "type": "docs_to_github",
+          "description": "Google Docs sections mirror nervous system files"
+        }
+      ],
+      "cert_capabilities": [],
+      "read_surfaces": [
+        "google_drive_api"
+      ],
+      "write_surfaces": [
+        "google_drive_api"
+      ],
+      "sync_sources": [
+        "https://docs.google.com/document/d/1OUjhabDK08QvamAa0USQmTeEDNAwN3b853OVmvMUdaE",
+        "https://docs.google.com/document/d/1bzcO7PKGlMUc2A35VYo5msN7hGYZzGA4KRQaFaRfbvQ",
+        "https://docs.google.com/document/d/1LJEMi-OmqSfSqJTc585nxlf5zGF0rfyqbygNlYYB6J4"
+      ],
+      "github_repo": null,
+      "tool_count": 0,
+      "resource_count": 0
+    }
+  ],
+  "graph_stats": {
+    "edge_type_distribution": {
+      "BUILD": 29,
+      "BRIDGE": 4,
+      "MIRROR": 4,
+      "REF": 9,
+      "SEEDS": 4
+    },
+    "family_sizes": {
+      "angel": 5,
+      "brain": 6,
+      "clock": 2,
+      "conservation": 2,
+      "emergence": 2,
+      "dimensions": 2,
+      "hologram": 4,
+      "inverse_crystal": 6,
+      "live_cell": 2,
+      "live_lock": 2,
+      "metro": 2,
+      "mobius": 2,
+      "moves": 2,
+      "mycelium-graph": 1,
+      "node-registry": 1,
+      "organs": 2,
+      "overlays": 2,
+      "shells": 2,
+      "stages": 2,
+      "transport": 2,
+      "z_points": 2,
+      "address": 1,
+      "mycelium": 2,
+      "server": 1
+    },
+    "medium_distribution": {
+      "code": 30,
+      "json": 27
+    }
+  }
+}

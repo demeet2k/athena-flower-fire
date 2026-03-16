@@ -146,6 +146,19 @@ class TestJsonFilesLoad:
         assert "weave_operators" in data
         assert "control_shells" in data
 
+    def test_mycelium_graph(self):
+        data = _load("mycelium_graph.json")
+        assert "meta" in data
+        assert "shards" in data
+        assert "edges" in data
+        assert "nodes" in data
+        assert "graph_stats" in data
+
+    def test_node_registry(self):
+        data = _load("node_registry.json")
+        assert "meta" in data
+        assert "nodes" in data
+
 
 class TestDataIntegrity:
     """Cross-check meta counts against actual data."""
@@ -305,3 +318,17 @@ class TestDataIntegrity:
         assert "W3" in data["weave_operators"]
         assert "W5" in data["weave_operators"]
         assert "W7" in data["weave_operators"]
+
+    def test_mycelium_shard_count(self):
+        data = _load("mycelium_graph.json")
+        assert data["meta"]["shard_count"] >= 50
+        assert len(data["shards"]) == data["meta"]["shard_count"]
+
+    def test_mycelium_edge_count(self):
+        data = _load("mycelium_graph.json")
+        assert data["meta"]["edge_count"] >= 30
+        assert len(data["edges"]) == data["meta"]["edge_count"]
+
+    def test_node_registry_count(self):
+        data = _load("node_registry.json")
+        assert len(data["nodes"]) >= 5

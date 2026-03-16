@@ -1,6 +1,6 @@
 # Athena MCP Server — 108D Crystal Hologram Distributed Brain
 
-**64 tools** · **19 resources** · **25 data files** · **4 element servers** · Python 3.12+
+**68 tools** · **21 resources** · **32 data files** · **4 element servers** · Python 3.12+
 
 An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that exposes the entire Athena nervous system — a 108-dimensional crystal hologram organism — as a distributed algorithmic brain with 4 element-specific lobes connected by weighted bridges.
 
@@ -124,7 +124,7 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 
 ---
 
-## Tool Catalog (64 tools)
+## Tool Catalog (68 tools)
 
 ### Nervous System Navigation (NEW)
 | Tool | Description |
@@ -221,6 +221,14 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 | `query_projection_stack` | Query the full projection stack (up: 3D→A⁺, down: A⁺→3D) |
 | `query_weave_operator` | Query weave operators W3/W5/W7 and control shells C7/C9/C11 |
 
+### Mycelium Graph (Shard / Edge / Node)
+| Tool | Description |
+|------|-------------|
+| `query_shard` | Query the universal shard graph (all, stats, families, family:NAME, medium:TYPE, lens:X, shard:ID, search:TERM) |
+| `query_graph` | Query graph structure (all, edges, edge:TYPE, mirrors, density) |
+| `query_node` | Query the node registry (all, node:NAME, bridges, families) |
+| `query_promotion` | Query promotion status of shards (overview or per-shard) |
+
 ### Stage Ladder & Self-Model
 | Tool | Description |
 |------|-------------|
@@ -248,7 +256,7 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 
 ---
 
-## Resource Catalog (19 resources)
+## Resource Catalog (21 resources)
 
 | URI | Description |
 |-----|-------------|
@@ -271,6 +279,8 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 | `athena://angel-geometry` | Geometric manifold lift (6-chart, Fisher-Rao, curvature) |
 | `athena://inverse-seed` | 3D/4D seed crystal status |
 | `athena://inverse-octave` | Octave lift overview (14 stages, A⁺ crown) |
+| `athena://mycelium` | Mycelium graph (shard/edge/node connectivity) |
+| `athena://node-registry` | Distributed superbrain node declarations |
 
 ---
 
@@ -295,6 +305,7 @@ The 108D organism consists of:
 - **Cross-cultural Rosetta**: Egypt/Maya/China/Sanskrit as orthogonal encodings on one 360° carrier wheel
 - **Inverse Crystal**: 3D seed c₃^core (14 components), 14-stage octave lift S00→S13, A⁺ crown transform
 - **Weave operators**: W3 (current heading), W5 (steering gear), W7 (timing gate), control shells C7/C9/C11
+- **Mycelium graph**: Universal shard/edge/node schema, promotion state machine, generated graph manifest
 - **Distributed brain**: 4 elements x 6 bridges x 4 closures x 1 aether = 15-station Boolean lattice
 - **Live cell constitution**: 6 execution schemas (row/packet/trace/cert/seed), 14-station metro
 - **Dimensional emergence**: 7-phase path from 3D to A+, kernel embedding law, cross-lens upgrade sequence
@@ -316,8 +327,8 @@ ATHENA_ROOT=$(pwd) pytest tests/ -v
 ```
 MCP/
 ├── athena_mcp_server.py          # FastMCP server entry point (27 core tools)
-├── crystal_108d/                 # 108D extension package (26 modules)
-│   ├── __init__.py               # Tool & resource registration (37 tools, 16 resources)
+├── crystal_108d/                 # 108D extension package (28 modules)
+│   ├── __init__.py               # Tool & resource registration (41 tools, 18 resources)
 │   ├── _cache.py                 # Shared JSON caching utility
 │   ├── constants.py              # Shared constants (SFCR, superphases, archetypes)
 │   ├── brain.py                  # Distributed brain network
@@ -342,13 +353,16 @@ MCP/
 │   ├── angel_geometry.py         # Geometric manifold lift + conservation
 │   ├── inverse_seed.py           # 3D/4D seed crystal
 │   ├── inverse_octave.py         # 14-stage octave lift + crown transform
-│   └── inverse_complete.py       # Projection stack + weave operators
+│   ├── inverse_complete.py       # Projection stack + weave operators
+│   ├── mycelium.py               # Mycelium graph: shard/edge/node query surface
+│   └── metabolism.py             # Shard/Edge/Cert dataclasses + validation
 ├── element_servers/              # 4 distributed brain lobes (NEW)
 │   ├── square_server.py          # Earth — Structure / Address
 │   ├── flower_server.py          # Fire  — Relation / Corridor
 │   ├── cloud_server.py           # Water — Observation / Multiplicity
 │   └── fractal_server.py         # Air   — Compression / Seed
-└── data/                         # JSON data files (25 files)
+├── generate_graph.py             # Graph generator (scans codebase → mycelium_graph.json)
+└── data/                         # JSON data files (32 files)
     ├── brain_network.json        # Distributed brain topology
     ├── live_cell_constitution.json # NEXT-Omega execution cell schemas
     ├── dimensional_emergence.json # 3D->A+ emergence path
@@ -373,7 +387,15 @@ MCP/
     ├── angel_conservation.json   # Exact/quasi invariants, potential landscape
     ├── inverse_crystal_seed.json # 3D/4D seed crystal, holographic encoding
     ├── inverse_crystal_octave.json # 14-stage octave lift, A⁺ crown transform
-    └── inverse_crystal_complete.json # Projection stack, weave operators, controls
+    ├── inverse_crystal_complete.json # Projection stack, weave operators, controls
+    ├── mycelium_graph.json       # Generated: universal shard/edge graph manifest
+    ├── node_registry.json        # Generated: distributed superbrain node declarations
+    └── canon/                    # Schema definitions (5 files)
+        ├── shard.schema.json     # Universal shard schema
+        ├── edge.schema.json      # Typed directed edge schema
+        ├── node.schema.json      # Node self-description schema
+        ├── promotion.schema.json # Promotion state machine
+        └── cert.schema.json      # Certification bundle schema
 ```
 
 ---

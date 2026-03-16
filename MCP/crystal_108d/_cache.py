@@ -36,6 +36,8 @@ _ALL_JSON_FILES = [
     "inverse_crystal_seed.json",
     "inverse_crystal_octave.json",
     "inverse_crystal_complete.json",
+    "mycelium_graph.json",
+    "node_registry.json",
 ]
 
 

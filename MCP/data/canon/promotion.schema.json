@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Promotion State Machine",
+    "version": "v1",
+    "description": "Governs how shards move through truth and promotion ladders."
+  },
+  "states": ["LOCAL", "PROPOSED", "REVIEWED", "PROMOTED", "ARCHIVED"],
+  "transitions": {
+    "LOCAL_to_PROPOSED": {
+      "requires": ["shard exists", "summary non-empty", "family assigned"],
+      "trigger": "nomination by any node"
+    },
+    "PROPOSED_to_REVIEWED": {
+      "requires": ["at least 1 CERTIFIES edge exists"],
+      "trigger": "certification by a node with cert_capability"
+    },
+    "REVIEWED_to_PROMOTED": {
+      "requires": ["truth_status >= WITNESSED", "cert_refs non-empty", "no unresolved DUAL conflicts"],
+      "trigger": "governance decision or automatic if all checks pass"
+    },
+    "PROMOTED_to_ARCHIVED": {
+      "requires": ["replacement shard exists with DERIVES edge", "replacement is PROMOTED"],
+      "trigger": "supersession by derived shard"
+    }
+  },
+  "truth_promotion_coupling": {
+    "rule": "promotion_status cannot exceed truth_status by more than one rung",
+    "example": "a SEED shard can be at most PROPOSED, never PROMOTED"
+  }
+}

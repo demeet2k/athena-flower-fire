@@ -122,6 +122,91 @@ def read_manifest(name: str = "") -> str:
     return _read_file(matches[0])
 
 
+# ── Mycelium: Structure & Verification ────────────────────────────
+
+@mcp.tool()
+def normalize_shard(shard_id: str = "") -> str:
+    """Verify structural invariants of a shard (ID format, required fields, seed_vector, payload_ref)."""
+    import json
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    if not shard_id:
+        total = len(data["shards"])
+        errors = []
+        for s in data["shards"]:
+            if not s.get("shard_id"):
+                errors.append("Missing shard_id")
+            if not s.get("payload_ref"):
+                errors.append(f"{s.get('shard_id', '?')}: missing payload_ref")
+            if len(s.get("seed_vector", [])) != 4:
+                errors.append(f"{s.get('shard_id', '?')}: seed_vector != 4 elements")
+        if errors:
+            return f"## Structural Check ({total} shards)\n\n**{len(errors)} issues**:\n" + "\n".join(f"- {e}" for e in errors)
+        return f"## Structural Check\n\nAll {total} shards pass structural invariants."
+    matches = [s for s in data["shards"] if shard_id.lower() in s["shard_id"].lower()]
+    if not matches:
+        return f"Shard '{shard_id}' not found."
+    lines = []
+    for s in matches:
+        checks = []
+        checks.append(f"shard_id: {'OK' if s.get('shard_id') else 'MISSING'}")
+        checks.append(f"medium: {'OK' if s.get('medium') else 'MISSING'}")
+        checks.append(f"payload_ref: {'OK' if s.get('payload_ref') else 'MISSING'}")
+        checks.append(f"seed_vector: {'OK (len=4)' if len(s.get('seed_vector', [])) == 4 else 'BAD'}")
+        checks.append(f"family: {'OK' if s.get('family') else 'MISSING'}")
+        checks.append(f"truth_status: {s.get('truth_status', 'MISSING')}")
+        checks.append(f"promotion_status: {s.get('promotion_status', 'MISSING')}")
+        lines.append(f"### {s['shard_id']}\n" + "\n".join(f"- {c}" for c in checks))
+    return "\n\n".join(lines)
+
+
+@mcp.tool()
+def verify_invariants(shard_id: str = "") -> str:
+    """Verify conservation checks on a shard's edge neighborhood."""
+    import json
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    if not shard_id:
+        # Global invariant check
+        shard_ids = {s["shard_id"] for s in data["shards"]}
+        orphan_edges = []
+        for e in data["edges"]:
+            if e["source_shard"] not in shard_ids:
+                orphan_edges.append(f"Edge {e['edge_id']}: source {e['source_shard']} not in graph")
+            if e["target_shard"] not in shard_ids:
+                orphan_edges.append(f"Edge {e['edge_id']}: target {e['target_shard']} not in graph")
+        if orphan_edges:
+            return f"## Invariant Check\n\n**{len(orphan_edges)} orphan edges**:\n" + "\n".join(f"- {o}" for o in orphan_edges[:20])
+        return f"## Invariant Check\n\nAll {len(data['edges'])} edges reference valid shards. No orphans."
+    matches = [s for s in data["shards"] if shard_id.lower() in s["shard_id"].lower()]
+    if not matches:
+        return f"Shard '{shard_id}' not found."
+    lines = []
+    for s in matches:
+        sid = s["shard_id"]
+        in_edges = [e for e in data["edges"] if e["target_shard"] == sid]
+        out_edges = [e for e in data["edges"] if e["source_shard"] == sid]
+        in_types = {}
+        for e in in_edges:
+            in_types[e["edge_type"]] = in_types.get(e["edge_type"], 0) + 1
+        out_types = {}
+        for e in out_edges:
+            out_types[e["edge_type"]] = out_types.get(e["edge_type"], 0) + 1
+        lines.append(
+            f"### {sid}\n"
+            f"- Incoming: {len(in_edges)} ({', '.join(f'{k}:{v}' for k, v in in_types.items()) or 'none'})\n"
+            f"- Outgoing: {len(out_edges)} ({', '.join(f'{k}:{v}' for k, v in out_types.items()) or 'none'})\n"
+            f"- Degree: {len(in_edges) + len(out_edges)}\n"
+            f"- Weight sum (in): {sum(e['weight'] for e in in_edges):.3f}\n"
+            f"- Weight sum (out): {sum(e['weight'] for e in out_edges):.3f}"
+        )
+    return "\n\n".join(lines)
+
+
 # ── Square-specific resource ──────────────────────────────────────
 @mcp.resource("athena://square-earth")
 def resource_square() -> str:

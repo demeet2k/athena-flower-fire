@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Node Schema",
+    "version": "v1",
+    "description": "Self-describing declaration for a node in the distributed Athena superbrain."
+  },
+  "required_fields": {
+    "node_id": "str — e.g. 'athena-mcp-server'",
+    "role": "enum: unified | lobe | docs | git | incubator | governance",
+    "medium_class": "enum: code | markdown | google_doc | git",
+    "lobe_affinity": "str | null — S, F, C, R, or null for universal",
+    "shard_families": "list[str] — families this node serves",
+    "mirrors": "list[str] — node_ids this node mirrors with",
+    "bridges": "list[dict] — cross-medium bridge descriptions",
+    "cert_capabilities": "list[str] — what this node can certify (STRUCTURAL, CONSERVATION, etc.)",
+    "read_surfaces": "list[str] — e.g. ['mcp_tool', 'mcp_resource', 'file_read']",
+    "write_surfaces": "list[str] — e.g. ['file_write', 'git_commit']",
+    "sync_sources": "list[str] — URIs for synchronization",
+    "github_repo": "str — repository URL",
+    "tool_count": "int",
+    "resource_count": "int"
+  }
+}

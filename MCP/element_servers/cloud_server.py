@@ -210,6 +210,74 @@ def read_tensor(tensor_name: str = "") -> str:
     return _read_file(matches[0])
 
 
+# ── Mycelium: Observation & Scoring ───────────────────────────────
+
+@mcp.tool()
+def score_candidates(family: str = "", top_n: int = 5) -> str:
+    """Rank shards by promotion readiness (truth_status, cert count, edge density)."""
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    truth_order = {"SEED": 0, "DRAFT": 1, "WITNESSED": 2, "CERTIFIED": 3, "CANONICAL": 4}
+    shards = data["shards"]
+    if family:
+        shards = [s for s in shards if s["family"].lower() == family.lower()]
+        if not shards:
+            return f"No shards in family '{family}'."
+    scored = []
+    for s in shards:
+        sid = s["shard_id"]
+        truth_score = truth_order.get(s["truth_status"], 0)
+        certs = sum(1 for e in data["edges"] if e["target_shard"] == sid and e["edge_type"] == "CERTIFIES")
+        degree = sum(1 for e in data["edges"] if e["source_shard"] == sid or e["target_shard"] == sid)
+        total = truth_score * 10 + certs * 5 + degree
+        scored.append((total, s, truth_score, certs, degree))
+    scored.sort(key=lambda x: -x[0])
+    top = scored[:top_n]
+    fam_label = f" (family: {family})" if family else ""
+    lines = [f"## Promotion Candidates{fam_label} (top {len(top)})\n"]
+    for rank, (score, s, ts, certs, deg) in enumerate(top, 1):
+        lines.append(
+            f"{rank}. **{s['shard_id']}** — score={score}\n"
+            f"   Truth: {s['truth_status']} ({ts}) | Certs: {certs} | Degree: {deg} | "
+            f"Promotion: {s['promotion_status']}"
+        )
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def emit_mirror_family(shard_id: str = "") -> str:
+    """Show all mirror relations for a shard across mediums."""
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    mirrors = data.get("mirrors", [])
+    if not shard_id:
+        if not mirrors:
+            return "No mirror edges in graph."
+        lines = [f"## All Mirrors ({len(mirrors)})\n"]
+        for m in mirrors:
+            lines.append(f"- `{m['source_shard']}` ↔ `{m['target_shard']}` ({m.get('metadata', {}).get('mirror_type', '?')})")
+        return "\n".join(lines)
+    sl = shard_id.lower()
+    hits = [m for m in mirrors if sl in m["source_shard"].lower() or sl in m["target_shard"].lower()]
+    mirror_edges = [e for e in data["edges"]
+                    if e["edge_type"] == "MIRROR"
+                    and (sl in e["source_shard"].lower() or sl in e["target_shard"].lower())]
+    if not hits and not mirror_edges:
+        return f"No mirror relations found for '{shard_id}'."
+    lines = [f"## Mirror Family: {shard_id}\n"]
+    seen = set()
+    for m in hits + mirror_edges:
+        pair = (m["source_shard"], m["target_shard"])
+        if pair not in seen:
+            seen.add(pair)
+            lines.append(f"- `{m['source_shard']}` ↔ `{m['target_shard']}`")
+    return "\n".join(lines)
+
+
 # ── Cloud-specific resource ───────────────────────────────────────
 @mcp.resource("athena://cloud-water")
 def resource_cloud() -> str:

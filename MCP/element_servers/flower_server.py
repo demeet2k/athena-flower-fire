@@ -122,6 +122,104 @@ def read_loop_state() -> str:
     return "Loop state not found."
 
 
+# ── Mycelium: Dynamics & Synthesis ────────────────────────────────
+
+@mcp.tool()
+def synthesize_branch(from_shard: str = "", to_shard: str = "") -> str:
+    """Compute shortest edge-path between two shards in the mycelium graph."""
+    import json
+    from collections import deque
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    if not from_shard or not to_shard:
+        return "Provide both from_shard and to_shard."
+    # Build adjacency list
+    adj = {}
+    edge_map = {}
+    for e in data["edges"]:
+        src, tgt = e["source_shard"], e["target_shard"]
+        adj.setdefault(src, []).append(tgt)
+        adj.setdefault(tgt, []).append(src)  # undirected for path-finding
+        edge_map[(src, tgt)] = e
+        edge_map[(tgt, src)] = e
+    # Resolve partial names
+    shard_ids = [s["shard_id"] for s in data["shards"]]
+    from_match = [s for s in shard_ids if from_shard.lower() in s.lower()]
+    to_match = [s for s in shard_ids if to_shard.lower() in s.lower()]
+    if not from_match:
+        return f"Source shard '{from_shard}' not found."
+    if not to_match:
+        return f"Target shard '{to_shard}' not found."
+    src_id = from_match[0]
+    tgt_id = to_match[0]
+    if src_id == tgt_id:
+        return f"Source and target are the same shard: {src_id}"
+    # BFS
+    visited = {src_id}
+    queue = deque([(src_id, [src_id])])
+    while queue:
+        current, path = queue.popleft()
+        for neighbor in adj.get(current, []):
+            if neighbor == tgt_id:
+                full_path = path + [neighbor]
+                lines = [f"## Path: {src_id} → {tgt_id} ({len(full_path)-1} hops)\n"]
+                for i in range(len(full_path) - 1):
+                    e = edge_map.get((full_path[i], full_path[i+1]))
+                    etype = e["edge_type"] if e else "?"
+                    w = e["weight"] if e else 0
+                    lines.append(f"{i+1}. `{full_path[i]}` —[{etype} w={w}]→ `{full_path[i+1]}`")
+                return "\n".join(lines)
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append((neighbor, path + [neighbor]))
+    return f"No path found between {src_id} and {tgt_id}."
+
+
+@mcp.tool()
+def expand_routes(shard_id: str = "") -> str:
+    """Expand a shard's route_refs into navigable corridor map."""
+    import json
+    graph_file = _MCP_DIR / "data" / "mycelium_graph.json"
+    if not graph_file.exists():
+        return "Graph not generated. Run generate_graph.py"
+    data = json.loads(graph_file.read_text(encoding="utf-8"))
+    if not shard_id:
+        # Show all shards with routes
+        routed = [s for s in data["shards"] if s.get("route_refs")]
+        if not routed:
+            return "No shards have route_refs."
+        lines = [f"## Shards with Routes ({len(routed)})\n"]
+        for s in routed:
+            lines.append(f"- **{s['shard_id']}**: {len(s['route_refs'])} routes")
+        return "\n".join(lines)
+    matches = [s for s in data["shards"] if shard_id.lower() in s["shard_id"].lower()]
+    if not matches:
+        return f"Shard '{shard_id}' not found."
+    s = matches[0]
+    out_edges = [e for e in data["edges"] if e["source_shard"] == s["shard_id"]]
+    in_edges = [e for e in data["edges"] if e["target_shard"] == s["shard_id"]]
+    lines = [
+        f"## Corridor Map: {s['shard_id']}\n",
+        f"**Family**: {s['family']} | **Medium**: {s['medium']} | **Lens**: {s.get('lens') or 'universal'}",
+        f"**Routes**: {len(s.get('route_refs', []))}",
+    ]
+    if s.get("route_refs"):
+        lines.append("\n### Route References\n")
+        for r in s["route_refs"]:
+            lines.append(f"- `{r}`")
+    if out_edges:
+        lines.append(f"\n### Outgoing Corridors ({len(out_edges)})\n")
+        for e in out_edges:
+            lines.append(f"- **{e['edge_type']}** → `{e['target_shard']}` (w={e['weight']})")
+    if in_edges:
+        lines.append(f"\n### Incoming Corridors ({len(in_edges)})\n")
+        for e in in_edges:
+            lines.append(f"- **{e['edge_type']}** ← `{e['source_shard']}` (w={e['weight']})")
+    return "\n".join(lines)
+
+
 # ── Flower-specific resource ──────────────────────────────────────
 @mcp.resource("athena://flower-fire")
 def resource_flower() -> str:

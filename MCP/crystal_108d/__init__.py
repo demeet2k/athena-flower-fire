@@ -20,6 +20,7 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Dimensional emergence path (7 phases, kernel embedding law)
   - Hologram reading protocol (4-face, seed equation, process grammar, Rosetta)
   - Inverse crystal (3D seed, 14-stage octave lift, A+ crown, projection stack)
+  - Mycelium graph (universal shard/edge/node schema, promotion state machine)
 """
 
 from ._cache import JsonCache
@@ -63,6 +64,7 @@ def status_summary() -> str:
         f"- **Hologram**: 4-face protocol, seed w=(1+i)/2, process grammar W=Pi_s(Phi_p(X_r))\n"
         f"- **Angel Geometry**: 6-chart manifold, Fisher-Rao, curvature R!=0, 7 axioms\n"
         f"- **Inverse Crystal**: 14-stage octave lift (3D->108D->A+), 3D seed (14 components), 2D boundary\n"
+        f"- **Mycelium Graph**: Universal shard/edge/node schema, promotion state machine\n"
     )
 
 
@@ -91,6 +93,7 @@ def register_108d_tools(mcp) -> None:
     from .inverse_seed import query_4d_seed, query_3d_crystal
     from .inverse_octave import query_octave_stage, query_crown_transform
     from .inverse_complete import query_projection_stack, query_weave_operator
+    from .mycelium import query_shard, query_graph, query_node, query_promotion
 
     # Register each tool
     mcp.tool()(query_shell)
@@ -130,6 +133,10 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_crown_transform)
     mcp.tool()(query_projection_stack)
     mcp.tool()(query_weave_operator)
+    mcp.tool()(query_shard)
+    mcp.tool()(query_graph)
+    mcp.tool()(query_node)
+    mcp.tool()(query_promotion)
 
 
 def register_108d_resources(mcp) -> None:
@@ -304,3 +311,15 @@ def register_108d_resources(mcp) -> None:
         """Inverse crystal octave — 14-stage lift + A+ crown transform."""
         from .inverse_octave import inverse_octave_status
         return inverse_octave_status()
+
+    @mcp.resource("athena://mycelium")
+    def resource_mycelium() -> str:
+        """Mycelium graph — universal shard/edge/node connectivity."""
+        from .mycelium import mycelium_status
+        return mycelium_status()
+
+    @mcp.resource("athena://node-registry")
+    def resource_node_registry() -> str:
+        """Node registry — distributed superbrain node declarations."""
+        from .mycelium import query_node
+        return query_node("all")
