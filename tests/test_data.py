@@ -75,6 +75,13 @@ class TestJsonFilesLoad:
         data = _load("angel_object.json")
         assert "structural_pieces" in data
 
+    def test_brain_network(self):
+        data = _load("brain_network.json")
+        assert "elements" in data
+        assert "bridges" in data
+        assert "closures" in data
+        assert "aether" in data
+
 
 class TestDataIntegrity:
     """Cross-check meta counts against actual data."""
@@ -147,3 +154,25 @@ class TestDataIntegrity:
         assert 3 in dims
         assert 12 in dims
         assert len(dims) == 10  # 3D through 12D
+
+    def test_brain_element_count(self):
+        data = _load("brain_network.json")
+        assert data["meta"]["elements"] == 4
+        assert len(data["elements"]) == 4
+
+    def test_brain_bridge_count(self):
+        data = _load("brain_network.json")
+        assert data["meta"]["bridges"] == 6
+        assert len(data["bridges"]) == 6
+
+    def test_brain_closure_count(self):
+        data = _load("brain_network.json")
+        assert data["meta"]["closures"] == 4
+        assert len(data["closures"]) == 4
+
+    def test_brain_total_stations(self):
+        data = _load("brain_network.json")
+        assert data["meta"]["total_stations"] == 15
+        # 4 elements + 6 bridges + 4 closures + 1 aether = 15
+        total = len(data["elements"]) + len(data["bridges"]) + len(data["closures"]) + len(data["aether"])
+        assert total == 15

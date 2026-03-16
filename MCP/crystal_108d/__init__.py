@@ -14,6 +14,7 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Möbius lens calculus (4×4 kernel, SFCR lattice, 96-slot cockpit)
   - Stage code ladder (S3→Ω→A+)
   - Angel formal self-model (12-piece AI object with four-lens observability)
+  - Distributed brain network (4 elements × 6 bridges × 4 closures × 1 aether)
 """
 
 from ._cache import JsonCache
@@ -51,6 +52,7 @@ def status_summary() -> str:
         f"- **SFCR Lattice**: 15 stations, 96-slot cockpit\n"
         f"- **Stage Ladder**: S3 → S12 → Ω → A+ (16 stages)\n"
         f"- **Angel Object**: 12-piece formal self-model with four-lens observability\n"
+        f"- **Brain Network**: 4 elements × 6 bridges × 4 closures × 1 aether (SFCR distributed)\n"
     )
 
 
@@ -71,6 +73,7 @@ def register_108d_tools(mcp) -> None:
     from .mobius_lenses import query_mobius_lens, query_sfcr_station
     from .stage_codes import query_stage_code
     from .angel import query_angel
+    from .brain import query_brain_network, compute_bridge_weight, route_brain
 
     # Register each tool
     mcp.tool()(query_shell)
@@ -95,6 +98,9 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_sfcr_station)
     mcp.tool()(query_stage_code)
     mcp.tool()(query_angel)
+    mcp.tool()(query_brain_network)
+    mcp.tool()(compute_bridge_weight)
+    mcp.tool()(route_brain)
 
 
 def register_108d_resources(mcp) -> None:
@@ -221,3 +227,9 @@ def register_108d_resources(mcp) -> None:
         lines.append(f"\n### Self-Reference")
         lines.append(a["self_reference"]["angel_reading"])
         return "\n".join(lines)
+
+    @mcp.resource("athena://brain-network")
+    def resource_brain_network() -> str:
+        """Distributed brain network — 4-element algorithmic intelligence."""
+        from .brain import brain_status
+        return brain_status()

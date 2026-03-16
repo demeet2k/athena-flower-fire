@@ -26,6 +26,7 @@ _ALL_JSON_FILES = [
     "mobius_lenses.json",
     "stage_codes.json",
     "angel_object.json",
+    "brain_network.json",
 ]
 
 

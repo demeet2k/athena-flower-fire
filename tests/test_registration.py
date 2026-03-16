@@ -22,11 +22,11 @@ class TestRegistration:
 
     def test_tool_count(self):
         tools = self.mcp._tool_manager._tools
-        assert len(tools) == 41, f"Expected 41 tools, got {len(tools)}: {sorted(tools.keys())}"
+        assert len(tools) == 44, f"Expected 44 tools, got {len(tools)}: {sorted(tools.keys())}"
 
     def test_resource_count(self):
         resources = self.mcp._resource_manager._resources
-        assert len(resources) == 11, f"Expected 11 resources, got {len(resources)}: {sorted(resources.keys())}"
+        assert len(resources) == 12, f"Expected 12 resources, got {len(resources)}: {sorted(resources.keys())}"
 
     def test_core_tools_present(self):
         tools = set(self.mcp._tool_manager._tools.keys())
@@ -49,6 +49,7 @@ class TestRegistration:
             "query_conservation", "query_overlay", "query_sigma15",
             "query_transport_stack", "query_mobius_lens", "query_sfcr_station",
             "query_stage_code", "query_angel",
+            "query_brain_network", "compute_bridge_weight", "route_brain",
         }
         missing = expected_108d - tools
         assert not missing, f"Missing 108D tools: {missing}"
@@ -61,6 +62,7 @@ class TestRegistration:
             "athena://organ-atlas", "athena://live-helm",
             "athena://conservation", "athena://mobius-lenses",
             "athena://stage-ladder", "athena://angel",
+            "athena://brain-network",
         }
         missing = expected - resources
         assert not missing, f"Missing resources: {missing}"

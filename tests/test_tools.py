@@ -15,6 +15,7 @@ from crystal_108d.transport import query_transport_stack
 from crystal_108d.mobius_lenses import query_mobius_lens, query_sfcr_station
 from crystal_108d.stage_codes import query_stage_code
 from crystal_108d.angel import query_angel
+from crystal_108d.brain import query_brain_network, compute_bridge_weight, route_brain
 
 
 class TestShellTools:
@@ -277,3 +278,91 @@ class TestAngelTool:
     def test_modes(self):
         result = query_angel("modes")
         assert "committed" in result.lower() or "flowing" in result.lower()
+
+
+class TestBrainTools:
+    def test_overview(self):
+        result = query_brain_network("all")
+        assert "Brain" in result
+
+    def test_elements(self):
+        result = query_brain_network("elements")
+        assert "Square" in result and "Flower" in result
+
+    def test_bridges(self):
+        result = query_brain_network("bridges")
+        assert "SF" in result or "Bridge" in result
+
+    def test_closures(self):
+        result = query_brain_network("closures")
+        assert "SFC" in result or "Triangle" in result
+
+    def test_aether(self):
+        result = query_brain_network("aether")
+        assert "SFCR" in result
+
+    def test_routing(self):
+        result = query_brain_network("routing")
+        assert "Z-Point" in result or "Layer" in result
+
+    def test_weights(self):
+        result = query_brain_network("weights")
+        assert "Golden" in result or "0.618" in result
+
+    def test_forks(self):
+        result = query_brain_network("forks")
+        assert "athena-square-earth" in result
+
+    def test_element_square(self):
+        result = query_brain_network("element:S")
+        assert "Earth" in result
+
+    def test_element_flower(self):
+        result = query_brain_network("element:F")
+        assert "Fire" in result
+
+    def test_element_cloud(self):
+        result = query_brain_network("element:C")
+        assert "Water" in result
+
+    def test_element_fractal(self):
+        result = query_brain_network("element:R")
+        assert "Air" in result
+
+    def test_bridge_sf(self):
+        result = query_brain_network("bridge:SF")
+        assert "Square" in result or "Flower" in result
+
+    def test_bridge_cr(self):
+        result = query_brain_network("bridge:CR")
+        assert "Cloud" in result or "Fractal" in result
+
+    def test_bridge_weight_sf(self):
+        result = compute_bridge_weight("S", "F", "L3", "L5")
+        assert "Bridge Weight" in result
+
+    def test_bridge_weight_cr(self):
+        result = compute_bridge_weight("C", "R")
+        assert "Bridge Weight" in result
+
+    def test_bridge_weight_self(self):
+        result = compute_bridge_weight("S", "S")
+        assert "Self-Loop" in result
+
+    def test_route_sf(self):
+        result = route_brain("S", "F")
+        assert "Brain Route" in result
+
+    def test_route_sr(self):
+        result = route_brain("S", "R")
+        assert "Brain Route" in result
+
+    def test_route_self(self):
+        result = route_brain("C", "C")
+        assert "self-loop" in result
+
+    def test_all_routes(self):
+        for s in "SFCR":
+            for t in "SFCR":
+                result = route_brain(s, t)
+                assert len(result) > 50
