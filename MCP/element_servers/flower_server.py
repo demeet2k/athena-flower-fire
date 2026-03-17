@@ -40,6 +40,7 @@ from crystal_108d.brain import query_brain_network, route_brain, compute_bridge_
 from crystal_108d.live_cell import query_live_cell
 from crystal_108d.inverse_octave import query_octave_stage, query_crown_transform
 from crystal_108d.inverse_complete import query_weave_operator
+from crystal_108d.guild_hall import query_quest
 
 mcp.tool()(query_metro_line)
 mcp.tool()(query_clock_beat)
@@ -54,6 +55,7 @@ mcp.tool()(query_live_cell)
 mcp.tool()(query_octave_stage)
 mcp.tool()(query_crown_transform)
 mcp.tool()(query_weave_operator)
+mcp.tool()(query_quest)
 
 # ── Core routing tools ────────────────────────────────────────────
 ATHENA_ROOT = Path(os.environ["ATHENA_ROOT"])

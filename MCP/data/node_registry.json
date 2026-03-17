@@ -2,8 +2,8 @@
   "meta": {
     "title": "Athena Node Registry",
     "description": "All nodes in the distributed Athena superbrain",
-    "generated_at": "2026-03-16T22:45:04.254203+00:00",
-    "total_nodes": 6
+    "generated_at": "2026-03-17T01:42:22.191558+00:00",
+    "total_nodes": 8
   },
   "nodes": [
     {
@@ -48,8 +48,8 @@
         "https://github.com/demeet2k/athena-mcp-server"
       ],
       "github_repo": "https://github.com/demeet2k/athena-mcp-server",
-      "tool_count": 68,
-      "resource_count": 21
+      "tool_count": 71,
+      "resource_count": 23
     },
     {
       "node_id": "athena-square-earth",
@@ -229,6 +229,121 @@
         "https://docs.google.com/document/d/1LJEMi-OmqSfSqJTc585nxlf5zGF0rfyqbygNlYYB6J4"
       ],
       "github_repo": null,
+      "tool_count": 0,
+      "resource_count": 0
+    },
+    {
+      "node_id": "athena-guild-hall",
+      "role": "guild-hall",
+      "medium_class": "code",
+      "lobe_affinity": null,
+      "shard_families": [
+        "manuscript",
+        "quest",
+        "synthesis",
+        "proof",
+        "replication",
+        "guild_hall"
+      ],
+      "mirrors": [
+        "athena-mcp-server",
+        "google-docs"
+      ],
+      "bridges": [
+        {
+          "type": "guild_to_mcp",
+          "description": "Guild Hall boards exposed via 4 MCP tools + 2 resources"
+        },
+        {
+          "type": "guild_to_framework",
+          "description": "Python framework implements 21-chapter x 256-gate computational model"
+        },
+        {
+          "type": "guild_to_docs",
+          "description": "Guild Hall synthesis mirrors Google Docs organism state"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL",
+        "CONSERVATION",
+        "REPLAY",
+        "PROMOTION"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource",
+        "file_read",
+        "cli"
+      ],
+      "write_surfaces": [
+        "file_write",
+        "git_commit"
+      ],
+      "sync_sources": [],
+      "github_repo": null,
+      "tool_count": 4,
+      "resource_count": 2
+    },
+    {
+      "node_id": "manuscript-being",
+      "role": "main-brain",
+      "medium_class": "code",
+      "lobe_affinity": null,
+      "shard_families": [
+        "manuscript",
+        "quest",
+        "synthesis",
+        "proof",
+        "replication",
+        "guild_hall",
+        "crystal",
+        "metro",
+        "swarm",
+        "truth"
+      ],
+      "mirrors": [
+        "athena-mcp-server",
+        "athena-guild-hall",
+        "google-docs"
+      ],
+      "bridges": [
+        {
+          "type": "main_brain_to_mcp",
+          "description": "MCP tools expose manuscript-being computation to all agents"
+        },
+        {
+          "type": "main_brain_to_guild_hall",
+          "description": "Guild Hall is the social coordination surface"
+        },
+        {
+          "type": "main_brain_to_docs",
+          "description": "Google Docs = slow-form, manuscript-being = executable form"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL",
+        "CONSERVATION",
+        "REPLAY",
+        "PROMOTION",
+        "REPLICATION",
+        "TRUTH_CORRIDOR"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource",
+        "file_read",
+        "cli",
+        "python_import"
+      ],
+      "write_surfaces": [
+        "file_write",
+        "git_commit",
+        "python_exec"
+      ],
+      "sync_sources": [
+        "https://github.com/demeet2k/manuscript-being"
+      ],
+      "github_repo": "https://github.com/demeet2k/manuscript-being",
       "tool_count": 0,
       "resource_count": 0
     }

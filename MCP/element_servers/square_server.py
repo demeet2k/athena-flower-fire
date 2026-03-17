@@ -38,6 +38,7 @@ from crystal_108d.brain import query_brain_network, route_brain, compute_bridge_
 from crystal_108d.hologram_reading import query_hologram
 from crystal_108d.inverse_seed import query_4d_seed
 from crystal_108d.angel_geometry import query_angel_conservation
+from crystal_108d.guild_hall import query_promotion_membrane
 
 mcp.tool()(query_shell)
 mcp.tool()(query_superphase)
@@ -51,6 +52,7 @@ mcp.tool()(compute_bridge_weight)
 mcp.tool()(query_hologram)
 mcp.tool()(query_4d_seed)
 mcp.tool()(query_angel_conservation)
+mcp.tool()(query_promotion_membrane)
 
 # ── Import core tools from main server (read-only navigation) ─────
 from crystal_108d import status_summary

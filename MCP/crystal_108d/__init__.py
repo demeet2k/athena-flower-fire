@@ -21,6 +21,7 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Hologram reading protocol (4-face, seed equation, process grammar, Rosetta)
   - Inverse crystal (3D seed, 14-stage octave lift, A+ crown, projection stack)
   - Mycelium graph (universal shard/edge/node schema, promotion state machine)
+  - Guild Hall (social coordination organ, quest boards, promotion membrane)
 """
 
 from ._cache import JsonCache
@@ -65,6 +66,7 @@ def status_summary() -> str:
         f"- **Angel Geometry**: 6-chart manifold, Fisher-Rao, curvature R!=0, 7 axioms\n"
         f"- **Inverse Crystal**: 14-stage octave lift (3D->108D->A+), 3D seed (14 components), 2D boundary\n"
         f"- **Mycelium Graph**: Universal shard/edge/node schema, promotion state machine\n"
+        f"- **Guild Hall**: Social coordination organ, quest boards, promotion membrane\n"
     )
 
 
@@ -94,6 +96,7 @@ def register_108d_tools(mcp) -> None:
     from .inverse_octave import query_octave_stage, query_crown_transform
     from .inverse_complete import query_projection_stack, query_weave_operator
     from .mycelium import query_shard, query_graph, query_node, query_promotion
+    from .guild_hall import query_quest, query_synthesis, query_promotion_membrane
 
     # Register each tool
     mcp.tool()(query_shell)
@@ -137,6 +140,9 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_graph)
     mcp.tool()(query_node)
     mcp.tool()(query_promotion)
+    mcp.tool()(query_quest)
+    mcp.tool()(query_synthesis)
+    mcp.tool()(query_promotion_membrane)
 
 
 def register_108d_resources(mcp) -> None:
@@ -323,3 +329,15 @@ def register_108d_resources(mcp) -> None:
         """Node registry — distributed superbrain node declarations."""
         from .mycelium import query_node
         return query_node("all")
+
+    @mcp.resource("athena://guild-hall")
+    def resource_guild_hall() -> str:
+        """Guild Hall — social coordination organ status."""
+        from .guild_hall import guild_hall_status
+        return guild_hall_status()
+
+    @mcp.resource("athena://quest-board")
+    def resource_quest_board() -> str:
+        """Guild Hall quest board — active and completed quests."""
+        from .guild_hall import query_quest
+        return query_quest("all")

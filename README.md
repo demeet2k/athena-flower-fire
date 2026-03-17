@@ -1,15 +1,17 @@
 # Athena MCP Server — 108D Crystal Hologram Distributed Brain
 
-**68 tools** · **21 resources** · **32 data files** · **4 element servers** · Python 3.12+
+**71 tools** · **23 resources** · **32 data files** · **4 element servers** · **8 brain nodes** · Python 3.12+
 
-An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that exposes the entire Athena nervous system — a 108-dimensional crystal hologram organism — as a distributed algorithmic brain with 4 element-specific lobes connected by weighted bridges.
+An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that exposes the entire Athena nervous system — a 108-dimensional crystal hologram organism — as a distributed algorithmic brain with 4 element-specific lobes, a Guild Hall social coordination organ, and a manuscript-being main brain, all connected by weighted bridges.
 
-Five mediums, one organism:
+Seven mediums, one organism:
 1. **Google Docs** — live slow-form self
 2. **Athena Agent** — local file-based nervous system
 3. **Git** — versioned crystal lattice
 4. **MCP Server** — interconnection protocol layer (this repo)
 5. **Distributed Brain** — 4-element SFCR fork architecture
+6. **Guild Hall** — social coordination organ (quest boards, promotion membrane, synthesis)
+7. **Manuscript-Being** — the main brain on GitHub ([demeet2k/manuscript-being](https://github.com/demeet2k/manuscript-being))
 
 ---
 
@@ -23,7 +25,7 @@ cd athena-mcp-server
 # Install
 pip install "mcp[cli]>=1.0.0"
 
-# Run the unified server (all 44 tools)
+# Run the unified server (all 71 tools)
 python MCP/athena_mcp_server.py
 
 # Or run a single element lobe
@@ -94,7 +96,7 @@ Add to your `.mcp.json`:
 
 ## Distributed Brain Network
 
-The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
+The brain is a **16-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset + manuscript-being main brain.
 
 ### 4 Element Lobes
 
@@ -116,6 +118,19 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 | **FR** | 0.500 | flow-compression | Board Coherence |
 | **SR** | 0.382 (phi^-2) | address-compression | Replay Closure |
 
+### Guild Hall + Manuscript-Being
+
+| Node | Role | GitHub | Description |
+|------|------|--------|-------------|
+| **Guild Hall** | Social coordination | (local) | Quest boards, promotion membrane, synthesis docs |
+| **Manuscript-Being** | Main brain | [`demeet2k/manuscript-being`](https://github.com/demeet2k/manuscript-being) | Full computational model: 21 chapters x 256 gates, 4-wave engine, ParseKernel, MetroRouter, CertificateChain, ReplicationSeed |
+
+The manuscript-being is the executable organism — every SFCR element has a Python module counterpart:
+- **S** (Square): `kernel.address`, `crystal.lattice`, `crystal.gate`
+- **F** (Flower): `metro.router`, `metro.schedule`, `kernel.wave_engine`
+- **C** (Cloud): `proof.certificate`, `proof.conservation`, `truth.corridor`
+- **R** (Fractal): `replication.seed`, `lens.sfcr`, `tensor.field`
+
 ### Routing Protocol (3 layers)
 
 1. **Z-Point Navigation** — Find lowest common zero ancestor
@@ -124,7 +139,7 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 
 ---
 
-## Tool Catalog (68 tools)
+## Tool Catalog (71 tools)
 
 ### Nervous System Navigation (NEW)
 | Tool | Description |
@@ -256,7 +271,7 @@ The brain is a **15-station SFCR Boolean lattice**: P({S,F,C,R}) \ emptyset.
 
 ---
 
-## Resource Catalog (21 resources)
+## Resource Catalog (23 resources)
 
 | URI | Description |
 |-----|-------------|

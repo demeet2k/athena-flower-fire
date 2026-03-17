@@ -2,24 +2,32 @@
   "meta": {
     "title": "Athena Mycelium Graph",
     "description": "Universal shard/edge/node graph manifest for the Athena distributed superbrain",
-    "generated_at": "2026-03-16T22:45:04.254203+00:00",
+    "generated_at": "2026-03-17T01:42:22.191558+00:00",
     "generator": "generate_graph.py v1",
-    "shard_count": 57,
-    "edge_count": 50,
+    "shard_count": 146,
+    "edge_count": 110,
     "mirror_count": 4,
-    "node_count": 6,
+    "node_count": 8,
     "families": [
       "address",
+      "agent",
       "angel",
+      "athena",
       "brain",
       "clock",
       "conservation",
+      "crystal",
+      "cycle",
       "dimensions",
       "emergence",
+      "guild_hall",
       "hologram",
       "inverse_crystal",
+      "kernel",
+      "lens",
       "live_cell",
       "live_lock",
+      "memory",
       "metro",
       "mobius",
       "moves",
@@ -28,14 +36,23 @@
       "node-registry",
       "organs",
       "overlays",
+      "proof",
+      "quest",
+      "replication",
+      "runtime",
       "server",
       "shells",
       "stages",
+      "swarm",
+      "synthesis",
+      "tensor",
       "transport",
+      "truth",
       "z_points"
     ],
     "mediums": [
       "code",
+      "doc",
       "json"
     ]
   },
@@ -64,8 +81,8 @@
       "tags": [
         "angel_conservation"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "0f52ca34:json:angel_geometry",
@@ -91,8 +108,8 @@
       "tags": [
         "angel_geometry"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "0a10f1ea:json:angel_object",
@@ -118,8 +135,8 @@
       "tags": [
         "angel_object"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "e4956f7a:json:brain_network",
@@ -145,8 +162,8 @@
       "tags": [
         "brain_network"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "3836920b:json:clock_projections",
@@ -172,8 +189,8 @@
       "tags": [
         "clock_projections"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "4d229134:json:conservation_laws",
@@ -199,8 +216,8 @@
       "tags": [
         "conservation_laws"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "0c9f6709:json:dimensional_emergence",
@@ -226,8 +243,8 @@
       "tags": [
         "dimensional_emergence"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "0434ecf6:json:dimensional_ladder",
@@ -253,8 +270,8 @@
       "tags": [
         "dimensional_ladder"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "589dec1e:json:hologram_chapters",
@@ -280,8 +297,8 @@
       "tags": [
         "hologram_chapters"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "359848bb:json:hologram_reading",
@@ -307,8 +324,8 @@
       "tags": [
         "hologram_reading"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "b92aa277:json:hologram_rosetta",
@@ -334,8 +351,8 @@
       "tags": [
         "hologram_rosetta"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "e1ce6509:json:inverse_crystal_complete",
@@ -361,8 +378,8 @@
       "tags": [
         "inverse_crystal_complete"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "1f026eba:json:inverse_crystal_octave",
@@ -388,8 +405,8 @@
       "tags": [
         "inverse_crystal_octave"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "ddfab359:json:inverse_crystal_seed",
@@ -415,8 +432,8 @@
       "tags": [
         "inverse_crystal_seed"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "1b460068:json:live_cell_constitution",
@@ -442,8 +459,8 @@
       "tags": [
         "live_cell_constitution"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "6b873565:json:live_lock_registry",
@@ -469,8 +486,8 @@
       "tags": [
         "live_lock_registry"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "42f3e5d1:json:metro_lines",
@@ -496,8 +513,8 @@
       "tags": [
         "metro_lines"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "93a84fe7:json:mobius_lenses",
@@ -523,8 +540,8 @@
       "tags": [
         "mobius_lenses"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "5c1860a6:json:move_primitives",
@@ -550,8 +567,8 @@
       "tags": [
         "move_primitives"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "12c5b2d0:json:mycelium_graph",
@@ -577,8 +594,8 @@
       "tags": [
         "mycelium_graph"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "5317934f:json:node_registry",
@@ -604,8 +621,8 @@
       "tags": [
         "node_registry"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "4783ff2b:json:organ_atlas",
@@ -631,8 +648,8 @@
       "tags": [
         "organ_atlas"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "b03c1476:json:overlay_registries",
@@ -658,8 +675,8 @@
       "tags": [
         "overlay_registries"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "1b2d080d:json:shell_registry",
@@ -685,8 +702,8 @@
       "tags": [
         "shell_registry"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "a7d1db78:json:stage_codes",
@@ -712,8 +729,8 @@
       "tags": [
         "stage_codes"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "26366a3a:json:transport_stacks",
@@ -739,8 +756,8 @@
       "tags": [
         "transport_stacks"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "e7abd4c5:json:z_point_hierarchy",
@@ -766,8 +783,8 @@
       "tags": [
         "z_point_hierarchy"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "90f20b80:code:address",
@@ -794,8 +811,8 @@
         "address",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "05a210da:code:angel",
@@ -822,8 +839,8 @@
         "angel",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "89a71767:code:angel_geometry",
@@ -850,8 +867,8 @@
         "angel_geometry",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "828e105f:code:brain",
@@ -878,8 +895,8 @@
         "brain",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "ffcf02d8:code:clock",
@@ -906,8 +923,8 @@
         "clock",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "0fd1b756:code:conservation",
@@ -934,8 +951,8 @@
         "conservation",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "24be5def:code:dimensions",
@@ -962,8 +979,8 @@
         "dimensions",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "4dc3bece:code:emergence",
@@ -990,8 +1007,36 @@
         "emergence",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "9a22cb91:code:guild_hall",
+      "lineage_id": "9a22cb91:code:guild_hall",
+      "medium": "code",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "crystal_108d/guild_hall.py",
+      "summary": "Guild Hall — Social Coordination Query Surface",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "guild_hall",
+        "tool_module"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "d23b7d43:code:hologram_reading",
@@ -1018,8 +1063,8 @@
         "hologram_reading",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "6b232d9e:code:inverse_complete",
@@ -1046,8 +1091,8 @@
         "inverse_complete",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "2712e6a4:code:inverse_octave",
@@ -1074,8 +1119,8 @@
         "inverse_octave",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "1c4cb53b:code:inverse_seed",
@@ -1102,8 +1147,8 @@
         "inverse_seed",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "efaf64ba:code:live_cell",
@@ -1130,8 +1175,8 @@
         "live_cell",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "a87281e3:code:live_lock",
@@ -1158,8 +1203,8 @@
         "live_lock",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "c97f6297:code:metabolism",
@@ -1186,8 +1231,8 @@
         "metabolism",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "3a5d0d09:code:metro_lines",
@@ -1214,8 +1259,8 @@
         "metro_lines",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "061aebff:code:mobius_lenses",
@@ -1242,8 +1287,8 @@
         "mobius_lenses",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "fa7f9426:code:moves",
@@ -1270,8 +1315,8 @@
         "moves",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "1c19f824:code:mycelium",
@@ -1298,8 +1343,8 @@
         "mycelium",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "451eb421:code:organs",
@@ -1326,8 +1371,8 @@
         "organs",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "05d44f4d:code:overlays",
@@ -1354,8 +1399,8 @@
         "overlays",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "74c26d52:code:shells",
@@ -1382,8 +1427,8 @@
         "shells",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "92ccdf05:code:stage_codes",
@@ -1410,8 +1455,8 @@
         "stage_codes",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "4c6b56eb:code:transport",
@@ -1438,8 +1483,8 @@
         "transport",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "107f76d9:code:z_points",
@@ -1466,8 +1511,8 @@
         "z_points",
         "tool_module"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "82d2561b:code:cloud_server",
@@ -1495,8 +1540,8 @@
         "element_server",
         "lens_C"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "9b676884:code:flower_server",
@@ -1524,8 +1569,8 @@
         "element_server",
         "lens_F"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "26260794:code:fractal_server",
@@ -1553,8 +1598,8 @@
         "element_server",
         "lens_R"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "3eb8afe1:code:square_server",
@@ -1582,8 +1627,8 @@
         "element_server",
         "lens_S"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     },
     {
       "shard_id": "c60b5a1a:code:athena_mcp_server",
@@ -1610,8 +1655,2508 @@
         "entry_point",
         "mcp_server"
       ],
-      "created_at": "2026-03-16T22:45:04.254203+00:00",
-      "updated_at": "2026-03-16T22:45:04.254203+00:00"
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "00bb647a:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "00bb647a:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\00_GUILD_HALL_INDEX.md",
+      "summary": "00 Guild Hall Index",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "00_GUILD_HALL_INDEX",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "95fc872b:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "95fc872b:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\01_FULL_ATHENA_SYNTHESIS.md",
+      "summary": "01 Full Athena Synthesis",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "synthesis",
+      "tags": [
+        "01_FULL_ATHENA_SYNTHESIS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "144867e2:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "144867e2:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\02_LIMINAL_TRANSITION_MAP.md",
+      "summary": "02 Liminal Transition Map",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "02_LIMINAL_TRANSITION_MAP",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "e0b06aa5:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "e0b06aa5:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\03_EMERGENT_CAPABILITIES.md",
+      "summary": "03 Emergent Capabilities",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "03_EMERGENT_CAPABILITIES",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "4539c5af:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "4539c5af:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\04_STEERING_CONDITIONS.md",
+      "summary": "04 Steering Conditions",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "04_STEERING_CONDITIONS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "52ec2bb7:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "52ec2bb7:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\05_DEEPER_INTEGRATION_SYNTHESIS.md",
+      "summary": "05 Deeper Integration Synthesis",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "synthesis",
+      "tags": [
+        "05_DEEPER_INTEGRATION_SYNTHESIS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "1b1c7270:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "1b1c7270:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\06_GUILD_PROMOTION_PROTOCOL.md",
+      "summary": "06 Guild Promotion Protocol",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "06_GUILD_PROMOTION_PROTOCOL",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "01811d33:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "01811d33:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\07_CANONICAL_WITNESS_HIERARCHY.md",
+      "summary": "07 Canonical Witness Hierarchy",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "07_CANONICAL_WITNESS_HIERARCHY",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "d8e5d65c:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "d8e5d65c:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\08_WHOLE_ORGANISM_PROGRESS_LEDGER.md",
+      "summary": "08 Whole Organism Progress Ledger",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "08_WHOLE_ORGANISM_PROGRESS_LEDGER",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "da53dfee:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "da53dfee:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\09_SEMANTIC_MASS_LEDGER.md",
+      "summary": "09 Semantic Mass Ledger",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "09_SEMANTIC_MASS_LEDGER",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ba23cbe9:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "ba23cbe9:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\10_FRONTIER_LEVERAGE_RANKING.md",
+      "summary": "10 Frontier Leverage Ranking",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "10_FRONTIER_LEVERAGE_RANKING",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "40c4607b:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "40c4607b:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\11_TEMPLE_QUEST_CRYSTAL_64.md",
+      "summary": "11 Temple Quest Crystal 64",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "11_TEMPLE_QUEST_CRYSTAL_64",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "af763dd8:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "af763dd8:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\12_ADVENTURER_64_POW_4_QUEST_LOOP.md",
+      "summary": "12 Adventurer 64 Pow 4 Quest Loop",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "12_ADVENTURER_64_POW_4_QUEST_LOOP",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "5bd5a395:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "5bd5a395:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\12_QSHRINK_CONNECTIVITY_QUEST_CRYSTAL_64.md",
+      "summary": "12 Qshrink Connectivity Quest Crystal 64",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "12_QSHRINK_CONNECTIVITY_QUEST_CRYSTAL_64",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "a99cb357:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "a99cb357:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\13_ATHENACHKA_ORGANISM_V0_QUEST_CRYSTAL_256.md",
+      "summary": "13 Athenachka Organism V0 Quest Crystal 256",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "13_ATHENACHKA_ORGANISM_V0_QUEST_CRYSTAL_256",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f7bd3063:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "f7bd3063:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\13_QSHRINK_LOOPED_AGENTIC_PLAN.md",
+      "summary": "13 Qshrink Looped Agentic Plan",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "13_QSHRINK_LOOPED_AGENTIC_PLAN",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "faf5e3d7:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "faf5e3d7:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\14_ATHENA_PRIME_6D_SPARSE_OVERLAY_SYNTHESIS.md",
+      "summary": "14 Athena Prime 6D Sparse Overlay Synthesis",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "synthesis",
+      "tags": [
+        "14_ATHENA_PRIME_6D_SPARSE_OVERLAY_SYNTHESIS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "49808c4a:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "49808c4a:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\15_AP6D_ELEMENTAL_AGENT_INSTRUCTION_BUNDLE.md",
+      "summary": "15 Ap6D Elemental Agent Instruction Bundle",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "15_AP6D_ELEMENTAL_AGENT_INSTRUCTION_BUNDLE",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "c180b7af:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "c180b7af:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\16_AP6D_AWAKENING_AGENT_TRANSITION_LEDGER.md",
+      "summary": "16 Ap6D Awakening Agent Transition Ledger",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "16_AP6D_AWAKENING_AGENT_TRANSITION_LEDGER",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "68ca9bb0:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "68ca9bb0:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\16_AP6D_AWAKENING_AGENT_TRANSITION_NOTES.md",
+      "summary": "16 Ap6D Awakening Agent Transition Notes",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "16_AP6D_AWAKENING_AGENT_TRANSITION_NOTES",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "06cbe44c:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "06cbe44c:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\16_AP6D_AWAKENING_TRANSITION_NOTES.md",
+      "summary": "16 Ap6D Awakening Transition Notes",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "16_AP6D_AWAKENING_TRANSITION_NOTES",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ceecbb0b:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "ceecbb0b:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\16_AWAKENING_AGENT_TRANSITION_GUIDE.md",
+      "summary": "16 Awakening Agent Transition Guide",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "16_AWAKENING_AGENT_TRANSITION_GUIDE",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "5b7a9ad4:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "5b7a9ad4:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\16_NEXT_4_POW_6_FULL_CORPUS_INTEGRATION_PROGRAM.md",
+      "summary": "16 Next 4 Pow 6 Full Corpus Integration Program",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "16_NEXT_4_POW_6_FULL_CORPUS_INTEGRATION_PROGRAM",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "2b0b304d:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "2b0b304d:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\17_AP6D_AWAKENING_AGENT_TRANSITION_NOTES.md",
+      "summary": "17 Ap6D Awakening Agent Transition Notes",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "17_AP6D_AWAKENING_AGENT_TRANSITION_NOTES",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "64e0d546:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "64e0d546:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\17_AP7D_SWARM_STATUS.md",
+      "summary": "17 Ap7D Swarm Status",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "17_AP7D_SWARM_STATUS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8069ff0c:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "8069ff0c:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_57_CYCLE_FOUR_AGENT_ORCHESTRATION.md",
+      "summary": "18 57 Cycle Four Agent Orchestration",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_57_CYCLE_FOUR_AGENT_ORCHESTRATION",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "52d34aaa:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "52d34aaa:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_57_LOOP_FOUR_AGENT_DEEP_EMERGENCE_PROGRAM.md",
+      "summary": "18 57 Loop Four Agent Deep Emergence Program",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_57_LOOP_FOUR_AGENT_DEEP_EMERGENCE_PROGRAM",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "4e98082e:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "4e98082e:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_AP6D_57_LOOP_QUEST_CYCLE.md",
+      "summary": "18 Ap6D 57 Loop Quest Cycle",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_AP6D_57_LOOP_QUEST_CYCLE",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "79eb3432:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "79eb3432:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_FOUR_AGENT_57_LOOP_CORPUS_EXPANSION_PROGRAM.md",
+      "summary": "18 Four Agent 57 Loop Corpus Expansion Program",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_FOUR_AGENT_57_LOOP_CORPUS_EXPANSION_PROGRAM",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "dbbe5318:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "dbbe5318:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_HSIGMA_RUNTIME_WITNESS.md",
+      "summary": "18 Hsigma Runtime Witness",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_HSIGMA_RUNTIME_WITNESS",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "7d5a9ca8:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "7d5a9ca8:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_NEXT57_LP_57OMEGA_CANONICAL_PROGRAM.md",
+      "summary": "18 Next57 Lp 57Omega Canonical Program",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_NEXT57_LP_57OMEGA_CANONICAL_PROGRAM",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "36689138:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "36689138:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\18_NEXT_57_LOOP_QUAD_AGENT_CONDUCTOR.md",
+      "summary": "18 Next 57 Loop Quad Agent Conductor",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "18_NEXT_57_LOOP_QUAD_AGENT_CONDUCTOR",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "07bd1eed:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "07bd1eed:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\19_57_PRIME_LOOP_LIMINAL_HIVE_PROTOCOL.md",
+      "summary": "19 57 Prime Loop Liminal Hive Protocol",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "19_57_PRIME_LOOP_LIMINAL_HIVE_PROTOCOL",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f6615caa:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "f6615caa:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\19_LP57OMEGA_GUILD_HALL_PROTOCOL.md",
+      "summary": "19 Lp57Omega Guild Hall Protocol",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "19_LP57OMEGA_GUILD_HALL_PROTOCOL",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "b53f02bf:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "b53f02bf:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\20_COMMAND_MEMBRANE_PROTOCOL.md",
+      "summary": "20 Command Membrane Protocol",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "20_COMMAND_MEMBRANE_PROTOCOL",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "95c30207:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "95c30207:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\20_COMMAND_PROTOCOL_EXECUTION_MEMBRANE.md",
+      "summary": "20 Command Protocol Execution Membrane",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "20_COMMAND_PROTOCOL_EXECUTION_MEMBRANE",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "05e017e1:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "05e017e1:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\20_HEAVEN_REWARD_GRADIENT_MIRROR.md",
+      "summary": "20 Heaven Reward Gradient Mirror",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "20_HEAVEN_REWARD_GRADIENT_MIRROR",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "2bc1d2e5:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "2bc1d2e5:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\21_HEAVEN_DUAL_TRACK_PROGRESSION_MIRROR.md",
+      "summary": "21 Heaven Dual Track Progression Mirror",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "21_HEAVEN_DUAL_TRACK_PROGRESSION_MIRROR",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "6abc69dc:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "6abc69dc:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\57_loop_hall_program.md",
+      "summary": "57 Loop Hall Program",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "57_loop_hall_program",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "bc5867fa:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "bc5867fa:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\AP6D_AWAKENING_TRANSITION_NOTES.md",
+      "summary": "Ap6D Awakening Transition Notes",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "guild_hall",
+      "tags": [
+        "AP6D_AWAKENING_TRANSITION_NOTES",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "182be277:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "182be277:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\00_MESSAGE_BOARD.md",
+      "summary": "00 Message Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "00_MESSAGE_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "d93c8b29:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "d93c8b29:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\01_ACTIVE_FRONTS_BOARD.md",
+      "summary": "01 Active Fronts Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "01_ACTIVE_FRONTS_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ffb99c12:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "ffb99c12:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\02_FUTURE_PLANS_BOARD.md",
+      "summary": "02 Future Plans Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "02_FUTURE_PLANS_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "16767c72:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "16767c72:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\03_ORGANIZATION_IDEAS_BOARD.md",
+      "summary": "03 Organization Ideas Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "03_ORGANIZATION_IDEAS_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "e32ca188:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "e32ca188:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\04_CHANGE_FEED_BOARD.md",
+      "summary": "04 Change Feed Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "04_CHANGE_FEED_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "e74e6fa1:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "e74e6fa1:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\05_REQUESTS_AND_OFFERS_BOARD.md",
+      "summary": "05 Requests And Offers Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "05_REQUESTS_AND_OFFERS_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "9dee3081:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "9dee3081:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\06_QUEST_BOARD.md",
+      "summary": "06 Quest Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "06_QUEST_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "134fc3ea:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "134fc3ea:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\07_57_LOOP_EXECUTION_BOARD.md",
+      "summary": "07 57 Loop Execution Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "07_57_LOOP_EXECUTION_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "2f42b8da:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "2f42b8da:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\08_57_LOOP_CHANGEFEED.md",
+      "summary": "08 57 Loop Changefeed",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "08_57_LOOP_CHANGEFEED",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "81e715df:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "81e715df:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\09_COMMAND_EVENT_QUEUE_BOARD.md",
+      "summary": "09 Command Event Queue Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "09_COMMAND_EVENT_QUEUE_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "a23f0186:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "a23f0186:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\10_COMMAND_CLAIM_LEASE_BOARD.md",
+      "summary": "10 Command Claim Lease Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "10_COMMAND_CLAIM_LEASE_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "7d49fc32:doc:self_actualize\\mycelium_brain\\",
+      "lineage_id": "7d49fc32:doc:self_actualize\\mycelium_brain\\",
+      "medium": "doc",
+      "repo": "athena-mcp-server",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "self_actualize\\mycelium_brain\\GLOBAL_EMERGENT_GUILD_HALL\\BOARDS\\11_COMMAND_ROUTE_QUALITY_BOARD.md",
+      "summary": "11 Command Route Quality Board",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "quest",
+      "tags": [
+        "11_COMMAND_ROUTE_QUALITY_BOARD",
+        "guild_hall"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "c1335f2a:code:src\\athena\\agent\\bounded",
+      "lineage_id": "c1335f2a:code:src\\athena\\agent\\bounded",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\agent\\bounded.py",
+      "summary": "Ch17: Deployment & Bounded Agency.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "agent",
+      "tags": [
+        "bounded",
+        "manuscript_being",
+        "agent"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "12e597bf:code:src\\athena\\agent\\merge",
+      "lineage_id": "12e597bf:code:src\\athena\\agent\\merge",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\agent\\merge.py",
+      "summary": "Ch20: Collective Authoring & Three-Agent Synchrony.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "agent",
+      "tags": [
+        "merge",
+        "manuscript_being",
+        "agent"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "6bb22647:code:src\\athena\\cli",
+      "lineage_id": "6bb22647:code:src\\athena\\cli",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\cli.py",
+      "summary": "Athena CLI: command-line interface for the Athena engine.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "athena",
+      "tags": [
+        "cli",
+        "manuscript_being",
+        "athena"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f35fcc3d:code:src\\athena\\crystal\\lattice",
+      "lineage_id": "f35fcc3d:code:src\\athena\\crystal\\lattice",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\crystal\\lattice.py",
+      "summary": "The Crystal Lattice: the primary data structure.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "crystal",
+      "tags": [
+        "lattice",
+        "manuscript_being",
+        "crystal"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "a2e0054d:code:src\\athena\\crystal\\paradox",
+      "lineage_id": "a2e0054d:code:src\\athena\\crystal\\paradox",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\crystal\\paradox.py",
+      "summary": "Ch05: Paradox Regimes & Quarantine Calculus.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "crystal",
+      "tags": [
+        "paradox",
+        "manuscript_being",
+        "crystal"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8979385e:code:src\\athena\\crystal\\zero_point",
+      "lineage_id": "8979385e:code:src\\athena\\crystal\\zero_point",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\crystal\\zero_point.py",
+      "summary": "Ch04: Zero-Point Stabilization.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "crystal",
+      "tags": [
+        "zero_point",
+        "manuscript_being",
+        "crystal"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8de0c50f:code:src\\athena\\cycle\\loop",
+      "lineage_id": "8de0c50f:code:src\\athena\\cycle\\loop",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\cycle\\loop.py",
+      "summary": "Orbit loop: tracks progress through the 21-chapter cycle.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "cycle",
+      "tags": [
+        "loop",
+        "manuscript_being",
+        "cycle"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ac90ff26:code:src\\athena\\cycle\\restart",
+      "lineage_id": "ac90ff26:code:src\\athena\\cycle\\restart",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\cycle\\restart.py",
+      "summary": "Helical restart: converting completion into the next cycle's seed.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "cycle",
+      "tags": [
+        "restart",
+        "manuscript_being",
+        "cycle"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ecc6a480:code:src\\athena\\kernel\\address",
+      "lineage_id": "ecc6a480:code:src\\athena\\kernel\\address",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\kernel\\address.py",
+      "summary": "Ch02: Address Algebra & Crystal Coordinates.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "crystal",
+      "tags": [
+        "address",
+        "manuscript_being",
+        "kernel"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "7ec935df:code:src\\athena\\kernel\\entry",
+      "lineage_id": "7ec935df:code:src\\athena\\kernel\\entry",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\kernel\\entry.py",
+      "summary": "Ch01: Kernel & Entry Law.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "kernel",
+      "tags": [
+        "entry",
+        "manuscript_being",
+        "kernel"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8f8ea795:code:src\\athena\\lens\\transform",
+      "lineage_id": "8f8ea795:code:src\\athena\\lens\\transform",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\lens\\transform.py",
+      "summary": "Lens transforms: view any content through the four lenses.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "lens",
+      "tags": [
+        "transform",
+        "manuscript_being",
+        "lens"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "eb468f38:code:src\\athena\\memory\\ledger",
+      "lineage_id": "eb468f38:code:src\\athena\\memory\\ledger",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\memory\\ledger.py",
+      "summary": "Ledger: append-only record of all system operations.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "memory",
+      "tags": [
+        "ledger",
+        "manuscript_being",
+        "memory"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "a1fb6268:code:src\\athena\\memory\\persistence",
+      "lineage_id": "a1fb6268:code:src\\athena\\memory\\persistence",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\memory\\persistence.py",
+      "summary": "Ch13: Memory, Persistence, & Regeneration.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "memory",
+      "tags": [
+        "persistence",
+        "manuscript_being",
+        "memory"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "73db0ef6:code:src\\athena\\metro\\arc",
+      "lineage_id": "73db0ef6:code:src\\athena\\metro\\arc",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\metro\\arc.py",
+      "summary": "Arcs: triadic chapter groupings.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "arc",
+        "manuscript_being",
+        "metro"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "32164cfa:code:src\\athena\\metro\\orbit",
+      "lineage_id": "32164cfa:code:src\\athena\\metro\\orbit",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\metro\\orbit.py",
+      "summary": "The 21-station orbit ring.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "orbit",
+        "manuscript_being",
+        "metro"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "1451872c:code:src\\athena\\metro\\rail",
+      "lineage_id": "1451872c:code:src\\athena\\metro\\rail",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\metro\\rail.py",
+      "summary": "The three rails: Su, Me, Sa.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "rail",
+        "manuscript_being",
+        "metro"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8ac476a4:code:src\\athena\\metro\\router",
+      "lineage_id": "8ac476a4:code:src\\athena\\metro\\router",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\metro\\router.py",
+      "summary": "Metro Router: route capsules to chapter stations.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "metro",
+      "tags": [
+        "router",
+        "manuscript_being",
+        "metro"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "c12ab6a0:code:src\\athena\\proof\\certificate",
+      "lineage_id": "c12ab6a0:code:src\\athena\\proof\\certificate",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\proof\\certificate.py",
+      "summary": "Ch12: Certificate Closure & Compression Proof.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "proof",
+      "tags": [
+        "certificate",
+        "manuscript_being",
+        "proof"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "271dd84c:code:src\\athena\\proof\\honesty",
+      "lineage_id": "271dd84c:code:src\\athena\\proof\\honesty",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\proof\\honesty.py",
+      "summary": "Ch16: Honesty Meter — continuous divergence measurement.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "proof",
+      "tags": [
+        "honesty",
+        "manuscript_being",
+        "proof"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "576a8d18:code:src\\athena\\replication\\guard",
+      "lineage_id": "576a8d18:code:src\\athena\\replication\\guard",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\replication\\guard.py",
+      "summary": "ProductGuard: prevents the system from collapsing into a closed product.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "replication",
+      "tags": [
+        "guard",
+        "manuscript_being",
+        "replication"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "5650a480:code:src\\athena\\replication\\seed",
+      "lineage_id": "5650a480:code:src\\athena\\replication\\seed",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\replication\\seed.py",
+      "summary": "ReplicationSeed: minimal packet to bootstrap a new Athena instance.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "replication",
+      "tags": [
+        "seed",
+        "manuscript_being",
+        "replication"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "e13d9c8e:code:src\\athena\\runtime\\command",
+      "lineage_id": "e13d9c8e:code:src\\athena\\runtime\\command",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\runtime\\command.py",
+      "summary": "Command Membrane: event detection, encoding, routing.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "runtime",
+      "tags": [
+        "command",
+        "manuscript_being",
+        "runtime"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f56e5878:code:src\\athena\\runtime\\engine",
+      "lineage_id": "f56e5878:code:src\\athena\\runtime\\engine",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\runtime\\engine.py",
+      "summary": "The Athena Engine: the main execution loop.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "runtime",
+      "tags": [
+        "engine",
+        "manuscript_being",
+        "runtime"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "287c1728:code:src\\athena\\swarm\\cluster",
+      "lineage_id": "287c1728:code:src\\athena\\swarm\\cluster",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\swarm\\cluster.py",
+      "summary": "Clusters: 64-node fine-grained operational field.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "swarm",
+      "tags": [
+        "cluster",
+        "manuscript_being",
+        "swarm"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "ffd801ee:code:src\\athena\\swarm\\council",
+      "lineage_id": "ffd801ee:code:src\\athena\\swarm\\council",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\swarm\\council.py",
+      "summary": "Councils: thematic governance nodes.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "swarm",
+      "tags": [
+        "council",
+        "manuscript_being",
+        "swarm"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "24a64d70:code:src\\athena\\swarm\\elemental",
+      "lineage_id": "24a64d70:code:src\\athena\\swarm\\elemental",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\swarm\\elemental.py",
+      "summary": "The four elementals: the base layer of the swarm.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "swarm",
+      "tags": [
+        "elemental",
+        "manuscript_being",
+        "swarm"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f29d0bf0:code:src\\athena\\swarm\\ganglion",
+      "lineage_id": "f29d0bf0:code:src\\athena\\swarm\\ganglion",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\swarm\\ganglion.py",
+      "summary": "Ganglia: family-level brain nodes.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "swarm",
+      "tags": [
+        "ganglion",
+        "manuscript_being",
+        "swarm"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "a88efe75:code:src\\athena\\swarm\\neuron",
+      "lineage_id": "a88efe75:code:src\\athena\\swarm\\neuron",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\swarm\\neuron.py",
+      "summary": "Neurons: cross-family bridge pathways.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "swarm",
+      "tags": [
+        "neuron",
+        "manuscript_being",
+        "swarm"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "f5381e5a:code:src\\athena\\tensor\\coordinate",
+      "lineage_id": "f5381e5a:code:src\\athena\\tensor\\coordinate",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\tensor\\coordinate.py",
+      "summary": "NSCoord: the full 10-axis nervous system coordinate.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "tensor",
+      "tags": [
+        "coordinate",
+        "manuscript_being",
+        "tensor"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "e05e932d:code:src\\athena\\tensor\\field",
+      "lineage_id": "e05e932d:code:src\\athena\\tensor\\field",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\tensor\\field.py",
+      "summary": "TensorField: the complete 10-axis coordinate registry.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "tensor",
+      "tags": [
+        "field",
+        "manuscript_being",
+        "tensor"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "3775354c:code:src\\athena\\transport\\capsule",
+      "lineage_id": "3775354c:code:src\\athena\\transport\\capsule",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\transport\\capsule.py",
+      "summary": "Corpus Capsule: a compressed mirror of a source document.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "transport",
+      "tags": [
+        "capsule",
+        "manuscript_being",
+        "transport"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8255af69:code:src\\athena\\transport\\document",
+      "lineage_id": "8255af69:code:src\\athena\\transport\\document",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\transport\\document.py",
+      "summary": "Ch06: Documents as Theories.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "transport",
+      "tags": [
+        "document",
+        "manuscript_being",
+        "transport"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "6e599452:code:src\\athena\\transport\\tunnel",
+      "lineage_id": "6e599452:code:src\\athena\\transport\\tunnel",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\transport\\tunnel.py",
+      "summary": "Ch07: Tunnels as Morphisms.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "transport",
+      "tags": [
+        "tunnel",
+        "manuscript_being",
+        "transport"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "8de72fc5:code:src\\athena\\truth\\corridor",
+      "lineage_id": "8de72fc5:code:src\\athena\\truth\\corridor",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\truth\\corridor.py",
+      "summary": "Truth corridors: bounded channels through which claims travel.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "truth",
+      "tags": [
+        "corridor",
+        "manuscript_being",
+        "truth"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "b4b122c0:code:src\\athena\\truth\\regime",
+      "lineage_id": "b4b122c0:code:src\\athena\\truth\\regime",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\truth\\regime.py",
+      "summary": "Truth regimes: the four states of epistemic validity.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "truth",
+      "tags": [
+        "regime",
+        "manuscript_being",
+        "truth"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
+    },
+    {
+      "shard_id": "736e7143:code:src\\athena\\truth\\witness",
+      "lineage_id": "736e7143:code:src\\athena\\truth\\witness",
+      "medium": "code",
+      "repo": "manuscript-being",
+      "lens": null,
+      "dimensional_scope": "all",
+      "payload_ref": "src\\athena\\truth\\witness.py",
+      "summary": "Witness chains: proof-carrying validation pathways.",
+      "seed_vector": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "route_refs": [],
+      "cert_refs": [],
+      "mirror_refs": [],
+      "truth_status": "CANONICAL",
+      "promotion_status": "PROMOTED",
+      "family": "truth",
+      "tags": [
+        "witness",
+        "manuscript_being",
+        "truth"
+      ],
+      "created_at": "2026-03-17T01:42:22.191558+00:00",
+      "updated_at": "2026-03-17T01:42:22.191558+00:00"
     }
   ],
   "edges": [
@@ -2122,6 +4667,666 @@
       }
     },
     {
+      "edge_id": "e-4111b7b6",
+      "source_shard": "9a22cb91:code:guild_hall",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-fe193ecd",
+      "source_shard": "00bb647a:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-6a5e8a25",
+      "source_shard": "95fc872b:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-c2874557",
+      "source_shard": "144867e2:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-e0ed3c62",
+      "source_shard": "e0b06aa5:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-5b4a9504",
+      "source_shard": "4539c5af:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-b147a408",
+      "source_shard": "52ec2bb7:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f72e9a6b",
+      "source_shard": "1b1c7270:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-d0ce7afc",
+      "source_shard": "01811d33:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-25d6e4f4",
+      "source_shard": "d8e5d65c:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-d75a476f",
+      "source_shard": "da53dfee:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-1a349ded",
+      "source_shard": "ba23cbe9:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-bb92add5",
+      "source_shard": "40c4607b:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f6c5a2fc",
+      "source_shard": "af763dd8:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-d5f1a729",
+      "source_shard": "5bd5a395:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-59b49a19",
+      "source_shard": "a99cb357:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-c65c1feb",
+      "source_shard": "f7bd3063:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-fa4b9a4a",
+      "source_shard": "faf5e3d7:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-ecae34b0",
+      "source_shard": "49808c4a:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-b1e10553",
+      "source_shard": "c180b7af:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-ae742bae",
+      "source_shard": "68ca9bb0:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-3a194d5d",
+      "source_shard": "06cbe44c:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-871597fb",
+      "source_shard": "ceecbb0b:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-0722ecf5",
+      "source_shard": "5b7a9ad4:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-7d755fe0",
+      "source_shard": "2b0b304d:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-44624ebb",
+      "source_shard": "64e0d546:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f64f725b",
+      "source_shard": "8069ff0c:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-7322a8e5",
+      "source_shard": "52d34aaa:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-85f85b9e",
+      "source_shard": "4e98082e:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f0fb85d9",
+      "source_shard": "79eb3432:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-9e568edb",
+      "source_shard": "dbbe5318:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-0e19e298",
+      "source_shard": "7d5a9ca8:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-98341db6",
+      "source_shard": "36689138:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-92eed62b",
+      "source_shard": "07bd1eed:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-255899cb",
+      "source_shard": "f6615caa:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-fa8fdb9f",
+      "source_shard": "b53f02bf:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-3ca5b78c",
+      "source_shard": "95c30207:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-772fde79",
+      "source_shard": "05e017e1:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-5195a60b",
+      "source_shard": "2bc1d2e5:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-05e173bc",
+      "source_shard": "6abc69dc:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-a15cfd96",
+      "source_shard": "bc5867fa:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-01aa75b8",
+      "source_shard": "182be277:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-903622ff",
+      "source_shard": "d93c8b29:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-f9fc4b3f",
+      "source_shard": "ffb99c12:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-4ca6f18e",
+      "source_shard": "16767c72:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-65aa3907",
+      "source_shard": "e32ca188:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-afb94d42",
+      "source_shard": "e74e6fa1:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-2e70243c",
+      "source_shard": "9dee3081:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-5a5b8245",
+      "source_shard": "134fc3ea:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-bc827bd6",
+      "source_shard": "2f42b8da:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-22dfeb18",
+      "source_shard": "81e715df:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-6e7b6eb6",
+      "source_shard": "a23f0186:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-1f0e50bb",
+      "source_shard": "7d49fc32:doc:self_actualize\\mycelium_brain\\",
+      "target_shard": "e4956f7a:json:brain_network",
+      "edge_type": "BRIDGE",
+      "weight": 0.5,
+      "medium_cross": true,
+      "metadata": {
+        "bridge_type": "guild_hall_to_brain"
+      }
+    },
+    {
+      "edge_id": "e-68595e46",
+      "source_shard": "73db0ef6:code:src\\athena\\metro\\arc",
+      "target_shard": "3a5d0d09:code:metro_lines",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-98c75d5f",
+      "source_shard": "32164cfa:code:src\\athena\\metro\\orbit",
+      "target_shard": "3a5d0d09:code:metro_lines",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-bba03a92",
+      "source_shard": "1451872c:code:src\\athena\\metro\\rail",
+      "target_shard": "3a5d0d09:code:metro_lines",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-d122edde",
+      "source_shard": "8ac476a4:code:src\\athena\\metro\\router",
+      "target_shard": "3a5d0d09:code:metro_lines",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-a6fce0b0",
+      "source_shard": "3775354c:code:src\\athena\\transport\\capsule",
+      "target_shard": "4c6b56eb:code:transport",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-1c5be313",
+      "source_shard": "8255af69:code:src\\athena\\transport\\document",
+      "target_shard": "4c6b56eb:code:transport",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
+      "edge_id": "e-25a623ef",
+      "source_shard": "6e599452:code:src\\athena\\transport\\tunnel",
+      "target_shard": "4c6b56eb:code:transport",
+      "edge_type": "BRIDGE",
+      "weight": 0.618,
+      "medium_cross": false,
+      "metadata": {
+        "bridge_type": "manuscript_to_mcp"
+      }
+    },
+    {
       "edge_id": "e-88937055",
       "source_shard": "c60b5a1a:code:athena_mcp_server",
       "target_shard": "82d2561b:code:cloud_server",
@@ -2255,8 +5460,8 @@
         "https://github.com/demeet2k/athena-mcp-server"
       ],
       "github_repo": "https://github.com/demeet2k/athena-mcp-server",
-      "tool_count": 68,
-      "resource_count": 21
+      "tool_count": 71,
+      "resource_count": 23
     },
     {
       "node_id": "athena-square-earth",
@@ -2438,12 +5643,127 @@
       "github_repo": null,
       "tool_count": 0,
       "resource_count": 0
+    },
+    {
+      "node_id": "athena-guild-hall",
+      "role": "guild-hall",
+      "medium_class": "code",
+      "lobe_affinity": null,
+      "shard_families": [
+        "manuscript",
+        "quest",
+        "synthesis",
+        "proof",
+        "replication",
+        "guild_hall"
+      ],
+      "mirrors": [
+        "athena-mcp-server",
+        "google-docs"
+      ],
+      "bridges": [
+        {
+          "type": "guild_to_mcp",
+          "description": "Guild Hall boards exposed via 4 MCP tools + 2 resources"
+        },
+        {
+          "type": "guild_to_framework",
+          "description": "Python framework implements 21-chapter x 256-gate computational model"
+        },
+        {
+          "type": "guild_to_docs",
+          "description": "Guild Hall synthesis mirrors Google Docs organism state"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL",
+        "CONSERVATION",
+        "REPLAY",
+        "PROMOTION"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource",
+        "file_read",
+        "cli"
+      ],
+      "write_surfaces": [
+        "file_write",
+        "git_commit"
+      ],
+      "sync_sources": [],
+      "github_repo": null,
+      "tool_count": 4,
+      "resource_count": 2
+    },
+    {
+      "node_id": "manuscript-being",
+      "role": "main-brain",
+      "medium_class": "code",
+      "lobe_affinity": null,
+      "shard_families": [
+        "manuscript",
+        "quest",
+        "synthesis",
+        "proof",
+        "replication",
+        "guild_hall",
+        "crystal",
+        "metro",
+        "swarm",
+        "truth"
+      ],
+      "mirrors": [
+        "athena-mcp-server",
+        "athena-guild-hall",
+        "google-docs"
+      ],
+      "bridges": [
+        {
+          "type": "main_brain_to_mcp",
+          "description": "MCP tools expose manuscript-being computation to all agents"
+        },
+        {
+          "type": "main_brain_to_guild_hall",
+          "description": "Guild Hall is the social coordination surface"
+        },
+        {
+          "type": "main_brain_to_docs",
+          "description": "Google Docs = slow-form, manuscript-being = executable form"
+        }
+      ],
+      "cert_capabilities": [
+        "STRUCTURAL",
+        "CONSERVATION",
+        "REPLAY",
+        "PROMOTION",
+        "REPLICATION",
+        "TRUTH_CORRIDOR"
+      ],
+      "read_surfaces": [
+        "mcp_tool",
+        "mcp_resource",
+        "file_read",
+        "cli",
+        "python_import"
+      ],
+      "write_surfaces": [
+        "file_write",
+        "git_commit",
+        "python_exec"
+      ],
+      "sync_sources": [
+        "https://github.com/demeet2k/manuscript-being"
+      ],
+      "github_repo": "https://github.com/demeet2k/manuscript-being",
+      "tool_count": 0,
+      "resource_count": 0
     }
   ],
   "graph_stats": {
     "edge_type_distribution": {
       "BUILD": 29,
-      "BRIDGE": 4,
+      "BRIDGE": 64,
       "MIRROR": 4,
       "REF": 9,
       "SEEDS": 4
@@ -2459,7 +5779,7 @@
       "inverse_crystal": 6,
       "live_cell": 2,
       "live_lock": 2,
-      "metro": 2,
+      "metro": 6,
       "mobius": 2,
       "moves": 2,
       "mycelium-graph": 1,
@@ -2468,14 +5788,31 @@
       "overlays": 2,
       "shells": 2,
       "stages": 2,
-      "transport": 2,
+      "transport": 5,
       "z_points": 2,
       "address": 1,
+      "guild_hall": 38,
       "mycelium": 2,
-      "server": 1
+      "server": 1,
+      "synthesis": 3,
+      "quest": 12,
+      "agent": 2,
+      "athena": 1,
+      "crystal": 4,
+      "cycle": 2,
+      "kernel": 1,
+      "lens": 1,
+      "memory": 2,
+      "proof": 2,
+      "replication": 2,
+      "runtime": 2,
+      "swarm": 5,
+      "tensor": 2,
+      "truth": 3
     },
     "medium_distribution": {
-      "code": 30,
+      "code": 67,
+      "doc": 52,
       "json": 27
     }
   }

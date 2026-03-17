@@ -271,10 +271,10 @@ class TestDataIntegrity:
 
     def test_brain_total_stations(self):
         data = _load("brain_network.json")
-        assert data["meta"]["total_stations"] == 15
-        # 4 elements + 6 bridges + 4 closures + 1 aether = 15
-        total = len(data["elements"]) + len(data["bridges"]) + len(data["closures"]) + len(data["aether"])
-        assert total == 15
+        assert data["meta"]["total_stations"] == 16
+        # 4 elements + 6 bridges + 4 closures + 1 aether + 1 main_brain = 16
+        total = len(data["elements"]) + len(data["bridges"]) + len(data["closures"]) + len(data["aether"]) + len(data["main_brain"])
+        assert total == 16
 
     def test_hologram_face_count(self):
         data = _load("hologram_reading.json")

@@ -42,6 +42,7 @@ from crystal_108d.emergence import query_emergence
 from crystal_108d.inverse_seed import query_3d_crystal
 from crystal_108d.inverse_complete import query_projection_stack
 from crystal_108d.hologram_reading import query_hologram
+from crystal_108d.guild_hall import guild_hall_status as _guild_hall_status
 
 mcp.tool()(query_stage_code)
 mcp.tool()(query_angel)
@@ -59,6 +60,13 @@ mcp.tool()(query_emergence)
 mcp.tool()(query_3d_crystal)
 mcp.tool()(query_projection_stack)
 mcp.tool()(query_hologram)
+
+
+@mcp.tool()
+def fractal_guild_status() -> str:
+    """Compressed Guild Hall status from the fractal/seed perspective."""
+    return _guild_hall_status()
+
 
 # ── Core fractal/compression tools ────────────────────────────────
 ATHENA_ROOT = Path(os.environ["ATHENA_ROOT"])

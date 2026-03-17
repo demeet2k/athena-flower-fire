@@ -6,7 +6,7 @@
     "bridges": 6,
     "closures": 4,
     "aether": 1,
-    "total_stations": 15,
+    "total_stations": 16,
     "governing_law": "P({S,F,C,R}) \\ ∅ — 15-station Boolean transport lattice",
     "weight_formula": "w(A→B) = |A∩B| / |A∪B| × resonance(A,B) — Jaccard × resonance",
     "conservation": "All 6 conservation laws must hold across brain transactions",
@@ -29,7 +29,8 @@
         "query_archetype", "read_chapter", "read_appendix", "query_overlay",
         "query_sigma15", "read_manifest",
         "query_hologram", "query_4d_seed", "query_angel_conservation",
-        "normalize_shard", "verify_invariants"
+        "normalize_shard", "verify_invariants",
+        "query_promotion_membrane"
       ],
       "transport_layers": ["Z", "A"],
       "weight_vector": [1.0, 0.0, 0.0, 0.0],
@@ -53,7 +54,8 @@
         "check_route_legality", "query_transport_stack", "resolve_z_point",
         "read_thread", "list_threads", "read_loop_state",
         "query_octave_stage", "query_crown_transform", "query_weave_operator",
-        "synthesize_branch", "expand_routes"
+        "synthesize_branch", "expand_routes",
+        "query_quest"
       ],
       "transport_layers": ["Z", "A", "L", "Tunnel", "Metro"],
       "weight_vector": [0.0, 1.0, 0.0, 0.0],
@@ -77,7 +79,8 @@
         "query_conservation", "list_corpus_capsules", "read_corpus_capsule",
         "read_board_status", "read_swarm_element", "read_frontier", "read_tensor",
         "query_hologram_rosetta", "query_angel_geometry",
-        "score_candidates", "emit_mirror_family"
+        "score_candidates", "emit_mirror_family",
+        "query_synthesis"
       ],
       "transport_layers": ["Z", "A", "L", "Tunnel", "Metro", "Mycelium", "Bus"],
       "weight_vector": [0.0, 0.0, 1.0, 0.0],
@@ -102,7 +105,8 @@
         "query_organ", "query_mobius_lens", "query_sfcr_station",
         "athena_status", "list_families",
         "query_3d_crystal", "query_projection_stack", "query_hologram",
-        "lift_shard", "compress_recursive_family"
+        "lift_shard", "compress_recursive_family",
+        "fractal_guild_status"
       ],
       "transport_layers": ["Z", "A", "L", "Tunnel", "Metro", "Mycelium", "Bus", "Plane", "ETV"],
       "weight_vector": [0.0, 0.0, 0.0, 1.0],
@@ -272,6 +276,33 @@
     },
     "dynamic_weight_formula": "w_dynamic(A→B, t) = w_base(A,B) × alignment(live_lock(A), live_lock(B)) × (1 - violation_count / 6)",
     "alignment_function": "alignment(L_a, L_b) = period(lcm(L_a, L_b)) / 420"
+  },
+
+  "main_brain": {
+    "manuscript-being": {
+      "mask": 15,
+      "name": "Manuscript-Being (Main Brain)",
+      "role": "The executable organism — contains all four elements as Python modules",
+      "github_repo": "demeet2k/manuscript-being",
+      "element_mapping": {
+        "S": {"modules": ["kernel.address", "crystal.lattice", "crystal.gate"], "description": "CrystalAddress + 256-gate system"},
+        "F": {"modules": ["metro.router", "metro.schedule", "kernel.wave_engine"], "description": "MetroRouter + 420-beat clock + 4-wave engine"},
+        "C": {"modules": ["proof.certificate", "proof.conservation", "truth.corridor"], "description": "CertificateChain + 6 conservation laws + truth corridors"},
+        "R": {"modules": ["replication.seed", "lens.sfcr", "tensor.field"], "description": "ReplicationSeed + SFCR decomposition + tensor operations"}
+      },
+      "bridges_to_elements": {
+        "to_square": {"weight": 0.85, "via": "CrystalAddress class maps to navigate_crystal tool"},
+        "to_flower": {"weight": 0.85, "via": "MetroRouter maps to route_metro tool"},
+        "to_cloud": {"weight": 0.85, "via": "CertificateChain maps to query_conservation tool"},
+        "to_fractal": {"weight": 0.85, "via": "ReplicationSeed maps to dimensional_lift tool"}
+      },
+      "bridge_to_guild_hall": {"weight": 0.95, "via": "Guild Hall is the social surface of manuscript-being"},
+      "bridge_to_mcp": {"weight": 1.0, "via": "MCP server exposes manuscript-being computation"},
+      "bridge_to_docs": {"weight": 0.75, "via": "Google Docs = slow-form, manuscript-being = executable form"},
+      "dimensional_ladder": ["4D", "6D", "12D", "36D", "108D"],
+      "wheel_circuit": "W1 -> W3 -> W5 -> W7 -> W9 -> W1",
+      "regeneration_cycle": "Athenachka <-> Z* <-> Aplus_star <-> D2 <-> C6 <-> Athenachka"
+    }
   },
 
   "fork_manifest": {

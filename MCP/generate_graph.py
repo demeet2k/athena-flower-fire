@@ -31,6 +31,8 @@ from crystal_108d.metabolism import (
 DATA_DIR = _MCP_DIR / "data"
 CRYSTAL_DIR = _MCP_DIR / "crystal_108d"
 ELEMENT_DIR = _MCP_DIR / "element_servers"
+GUILD_HALL_DIR = _MCP_DIR.parent / "self_actualize" / "mycelium_brain" / "GLOBAL_EMERGENT_GUILD_HALL"
+ATHENA_REPO_DIR = Path(os.environ.get("ATHENA_REPO", str(Path.home() / "Documents" / "athena")))
 
 NOW = now_iso()
 
@@ -100,6 +102,29 @@ ELEMENT_LENS = {
 }
 
 SKIP_MODULES = {"__init__", "_cache", "constants", "__pycache__"}
+
+MANUSCRIPT_MODULE_FAMILY = {
+    "address": "crystal",
+    "parse_kernel": "kernel",
+    "wave_engine": "kernel",
+    "lattice": "crystal",
+    "gate": "crystal",
+    "router": "metro",
+    "schedule": "metro",
+    "certificate": "proof",
+    "conservation": "proof",
+    "seed": "replication",
+    "corridor": "truth",
+    "witness": "truth",
+    "collective": "swarm",
+    "stack": "transport",
+    "sfcr": "lens",
+    "field": "tensor",
+    "regeneration": "cycle",
+    "store": "memory",
+    "runtime": "agent",
+    "executor": "runtime",
+}
 
 
 def _infer_family(stem: str) -> str:
@@ -313,6 +338,85 @@ def scan_main_server() -> Shard:
     )
 
 
+def scan_guild_hall() -> list[Shard]:
+    """Scan Guild Hall markdown files and create shards."""
+    shards = []
+    if not GUILD_HALL_DIR.exists():
+        return shards
+    for fp in sorted(GUILD_HALL_DIR.glob("**/*.md")):
+        rel = str(fp.relative_to(GUILD_HALL_DIR.parent.parent.parent))
+        sid = make_shard_id("doc", rel)
+        title = fp.stem.replace("_", " ").title()
+        # Infer family from path
+        if "BOARDS" in str(fp):
+            family = "quest"
+        elif "SYNTHESIS" in str(fp) or "SYNTHESIS" in fp.stem:
+            family = "synthesis"
+        elif "PROMOTION" in str(fp) or "WITNESS" in str(fp):
+            family = "guild_hall"
+        else:
+            family = "guild_hall"
+
+        shards.append(Shard(
+            shard_id=sid,
+            lineage_id=sid,
+            medium="doc",
+            repo="athena-mcp-server",
+            lens=None,
+            dimensional_scope="all",
+            payload_ref=rel,
+            summary=title,
+            seed_vector=[0.25, 0.25, 0.25, 0.25],
+            route_refs=[],
+            cert_refs=[],
+            mirror_refs=[],
+            truth_status="CANONICAL",
+            promotion_status="PROMOTED",
+            family=family,
+            tags=[fp.stem, "guild_hall"],
+            created_at=NOW,
+            updated_at=NOW,
+        ))
+    return shards
+
+
+def scan_manuscript_being() -> list[Shard]:
+    """Scan the manuscript-being Python framework modules."""
+    shards = []
+    src_dir = ATHENA_REPO_DIR / "src" / "athena"
+    if not src_dir.exists():
+        return shards
+    for fp in sorted(src_dir.glob("**/*.py")):
+        if fp.stem.startswith("_"):
+            continue
+        rel = str(fp.relative_to(ATHENA_REPO_DIR))
+        sid = make_shard_id("code", f"manuscript-being/{rel}")
+        summary = _extract_docstring(fp)
+        family = MANUSCRIPT_MODULE_FAMILY.get(fp.stem, fp.parent.name)
+
+        shards.append(Shard(
+            shard_id=sid,
+            lineage_id=sid,
+            medium="code",
+            repo="manuscript-being",
+            lens=None,
+            dimensional_scope="all",
+            payload_ref=rel,
+            summary=summary,
+            seed_vector=[0.25, 0.25, 0.25, 0.25],
+            route_refs=[],
+            cert_refs=[],
+            mirror_refs=[],
+            truth_status="CANONICAL",
+            promotion_status="PROMOTED",
+            family=family,
+            tags=[fp.stem, "manuscript_being", fp.parent.name],
+            created_at=NOW,
+            updated_at=NOW,
+        ))
+    return shards
+
+
 # ── Edge Building ───────────────────────────────────────────────────
 
 def build_edges(shards: list[Shard]) -> list[Edge]:
@@ -408,6 +512,43 @@ def build_edges(shards: list[Shard]) -> list[Edge]:
                         metadata={"family": family},
                     ))
 
+    # BRIDGE edges: guild hall shards → MCP data shards
+    guild_shards = [s for s in shards if "guild_hall" in s.tags]
+    mcp_data_shards = [s for s in shards if s.medium == "json"]
+    if guild_shards and mcp_data_shards:
+        # Connect guild hall to brain_network
+        if brain_sid:
+            for gs in guild_shards:
+                eid = make_edge_id(gs.shard_id, brain_sid, "BRIDGE")
+                edges.append(Edge(
+                    edge_id=eid,
+                    source_shard=gs.shard_id,
+                    target_shard=brain_sid,
+                    edge_type="BRIDGE",
+                    weight=0.5,
+                    medium_cross=True,
+                    metadata={"bridge_type": "guild_hall_to_brain"},
+                ))
+
+    # BRIDGE edges: manuscript-being modules → MCP tool modules
+    ms_shards = [s for s in shards if s.repo == "manuscript-being"]
+    mcp_code_shards = [s for s in shards if s.repo == "athena-mcp-server" and s.medium == "code"]
+    for ms in ms_shards:
+        # Connect manuscript-being modules to their MCP counterparts by family
+        for mcp in mcp_code_shards:
+            if ms.family == mcp.family or ms.family in mcp.tags:
+                eid = make_edge_id(ms.shard_id, mcp.shard_id, "BRIDGE")
+                edges.append(Edge(
+                    edge_id=eid,
+                    source_shard=ms.shard_id,
+                    target_shard=mcp.shard_id,
+                    edge_type="BRIDGE",
+                    weight=0.618,
+                    medium_cross=False,
+                    metadata={"bridge_type": "manuscript_to_mcp"},
+                ))
+                break  # one bridge per manuscript module
+
     # SEEDS edge: main server → all element servers
     if main_sid:
         for fp in sorted(ELEMENT_DIR.glob("*.py")):
@@ -451,8 +592,8 @@ def build_node_registry() -> list[dict]:
             "write_surfaces": ["file_write", "git_commit"],
             "sync_sources": ["https://github.com/demeet2k/athena-mcp-server"],
             "github_repo": "https://github.com/demeet2k/athena-mcp-server",
-            "tool_count": 68,
-            "resource_count": 21,
+            "tool_count": 71,
+            "resource_count": 23,
         },
         {
             "node_id": "athena-square-earth",
@@ -538,6 +679,47 @@ def build_node_registry() -> list[dict]:
             "tool_count": 0,
             "resource_count": 0,
         },
+        {
+            "node_id": "athena-guild-hall",
+            "role": "guild-hall",
+            "medium_class": "code",
+            "lobe_affinity": None,
+            "shard_families": ["manuscript", "quest", "synthesis", "proof", "replication", "guild_hall"],
+            "mirrors": ["athena-mcp-server", "google-docs"],
+            "bridges": [
+                {"type": "guild_to_mcp", "description": "Guild Hall boards exposed via 4 MCP tools + 2 resources"},
+                {"type": "guild_to_framework", "description": "Python framework implements 21-chapter x 256-gate computational model"},
+                {"type": "guild_to_docs", "description": "Guild Hall synthesis mirrors Google Docs organism state"},
+            ],
+            "cert_capabilities": ["STRUCTURAL", "CONSERVATION", "REPLAY", "PROMOTION"],
+            "read_surfaces": ["mcp_tool", "mcp_resource", "file_read", "cli"],
+            "write_surfaces": ["file_write", "git_commit"],
+            "sync_sources": [],
+            "github_repo": None,
+            "tool_count": 4,
+            "resource_count": 2,
+        },
+        {
+            "node_id": "manuscript-being",
+            "role": "main-brain",
+            "medium_class": "code",
+            "lobe_affinity": None,
+            "shard_families": ["manuscript", "quest", "synthesis", "proof", "replication",
+                               "guild_hall", "crystal", "metro", "swarm", "truth"],
+            "mirrors": ["athena-mcp-server", "athena-guild-hall", "google-docs"],
+            "bridges": [
+                {"type": "main_brain_to_mcp", "description": "MCP tools expose manuscript-being computation to all agents"},
+                {"type": "main_brain_to_guild_hall", "description": "Guild Hall is the social coordination surface"},
+                {"type": "main_brain_to_docs", "description": "Google Docs = slow-form, manuscript-being = executable form"},
+            ],
+            "cert_capabilities": ["STRUCTURAL", "CONSERVATION", "REPLAY", "PROMOTION", "REPLICATION", "TRUTH_CORRIDOR"],
+            "read_surfaces": ["mcp_tool", "mcp_resource", "file_read", "cli", "python_import"],
+            "write_surfaces": ["file_write", "git_commit", "python_exec"],
+            "sync_sources": ["https://github.com/demeet2k/manuscript-being"],
+            "github_repo": "https://github.com/demeet2k/manuscript-being",
+            "tool_count": 0,
+            "resource_count": 0,
+        },
     ]
 
 
@@ -559,7 +741,15 @@ def main():
     main_shard = scan_main_server()
     print("  1 main server shard")
 
-    all_shards = json_shards + code_shards + element_shards + [main_shard]
+    print("Scanning Guild Hall ...")
+    guild_shards = scan_guild_hall()
+    print(f"  {len(guild_shards)} guild hall shards")
+
+    print("Scanning manuscript-being ...")
+    ms_shards = scan_manuscript_being()
+    print(f"  {len(ms_shards)} manuscript-being shards")
+
+    all_shards = json_shards + code_shards + element_shards + [main_shard] + guild_shards + ms_shards
     print(f"\nTotal shards: {len(all_shards)}")
 
     print("Building edges ...")
