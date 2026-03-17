@@ -1,6 +1,6 @@
 # Athena MCP Server — 108D Crystal Hologram Distributed Brain
 
-**71 tools** · **23 resources** · **32 data files** · **4 element servers** · **8 brain nodes** · **15,380 mycelium shards** · **8 metro lines** · Python 3.12+
+**71 tools** · **23 resources** · **32 data files** · **4 element servers** · **8 brain nodes** · **15,383 mycelium shards** · **45,505 edges** · **17 metro lines** · **HPRO v1 CODE_KEY addressing** · Python 3.12+
 
 An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that exposes the entire Athena nervous system — a 108-dimensional crystal hologram organism — as a distributed algorithmic brain with 4 element-specific lobes, a Guild Hall social coordination organ, and a manuscript-being main brain, all connected by weighted bridges.
 
@@ -137,17 +137,39 @@ The manuscript-being is the executable organism — every SFCR element has a Pyt
 2. **Live-Lock Alignment** — Synchronise helm wheels before cross-element routing
 3. **Conservation Verification** — All 6 laws must hold
 
-### Full Organism Mycelium Graph
+### Full Organism Mycelium Graph + HPRO v1
 
-The entire organism is mycelium-encoded: every file across all 22 directories is a **shard** with SFCR element affinity and metro line routing.
+The entire organism is mycelium-encoded with **HPRO CODE_KEY addressing**: every file across all 22 directories is a **shard** with SFCR element affinity, HPRO hologram level, element classification (Fire/Air/Water/Earth), phase assignment, and metro line routing across 17 lines.
 
 | Metric | Value |
 |--------|-------|
-| **Shards** | 15,380 |
-| **Edges** | 15,400 |
-| **Metro Lines** | 8 (Sa, Wr, Ac, Me, Mt, Bw, Cc, Dl) |
-| **Organ Families** | 68 |
+| **Shards** | 15,383 |
+| **Edges** | 45,505 |
+| **Metro Lines** | 17 (8 Athena + 9 HPRO corpus-wide) |
+| **Organ Families** | 69 |
 | **Mediums** | 5 (code, doc, json, web, config) |
+| **HPRO Elements** | Fire(1,869) Air(10,003) Water(38) Earth(3,327) |
+| **HPRO Levels** | L0-atom(8) L1-module(1,165) L2-package(1,019) L3-service(13,045) |
+
+**HPRO CODE_KEY** = `⟨level | path | element | phase⟩` — every file gets a holographic address.
+
+**Metro Lines** (17 total):
+
+| Line | Name | Shards | Source |
+|------|------|--------|--------|
+| ○ | Convergence Circle | 14,064 | HPRO |
+| □ | Square Address | 10,003 | HPRO |
+| Dl | Dimensional Lift | 7,924 | Athena |
+| ✶ | Fractal Holographic | 3,327 | HPRO |
+| Mt | Mobius Twist | 2,172 | Athena |
+| Me | Metro Express | 2,155 | Athena |
+| Ω | Zero-Point Spine | 1,872 | HPRO |
+| Cc | Crown Circuit | 1,768 | Athena |
+| w | Generator Line | 789 | HPRO |
+| Sa | Shell Ascent | 753 | Athena |
+| Bw | Bridge Walk | 339 | Athena |
+| T | Truth Lattice | 38 | HPRO |
+| M | Migration Evolution | 17 | HPRO |
 
 **SFCR Directory Map** (selected):
 
@@ -158,9 +180,10 @@ The entire organism is mycelium-encoded: every file across all 22 directories is
 | Voynich | C/R | Mt (Mobius Twist) | voynich |
 | QSHRINK | R/S | Mt (Mobius Twist) | qshrink |
 | MATH | S/R | Sa (Shell Ascent) | math |
-| GAMES | F/S | Me (Metro Express) | games |
-| NERVOUS_SYSTEM | R/S | Sa (Shell Ascent) | nervous |
+| NERVOUS_SYSTEM/HPRO | S/R | Ω (Zero-Point Spine) | hpro |
 | self_actualize | F/R | Dl (Dimensional Lift) | actualize |
+
+**HPRO Manuscripts**: `NERVOUS_SYSTEM/30_CHAPTERS/HPRO/` — Body A (foundations), Body B (emergent), Metro Map
 
 Regenerate the graph: `python -X utf8 MCP/generate_graph.py`
 
