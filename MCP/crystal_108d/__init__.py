@@ -22,6 +22,12 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Inverse crystal (3D seed, 14-stage octave lift, A+ crown, projection stack)
   - Mycelium graph (universal shard/edge/node schema, promotion state machine)
   - Guild Hall (social coordination organ, quest boards, promotion membrane)
+  - Agency micro-gateway (self-verifying file-transfer, angel→agent bridge)
+  - 6×6 DLS framework (five-layer ontology, cross-lens calculus, higher lifts)
+  - Evolution compiler (path-revealing, 1/8 lift law, directed regrowth)
+  - Athenachka 720 metro map (Σ60×4×3 emergence protocol, Z⁺/A⁺)
+  - Program Rosetta (one crystal, nine projections, HPRO→VML→code)
+  - 4D Calculus (A⁺ lift canon, 15 masks, orbit quartets, gearclock)
 """
 
 from ._cache import JsonCache
@@ -70,6 +76,12 @@ def status_summary() -> str:
         f"- **Meta Observer**: 57-cycle swarm synthesis protocol (4-element × 12D observation)\n"
         f"- **E₈ Lattice**: Crystalline hybrid mathematics (dual-body, 73 files, 402 pages)\n"
         f"- **12D Crown**: B₁₂=W₉(B₁₀), odd-weave 2→3→5→7→9, RoundTripCertPack\n"
+        f"- **Agency Gateway**: Micro-gateway v2, self-verifying file-transfer, angel→agent bridge\n"
+        f"- **6×6 DLS**: Five-layer ontology (kernel→shell→board→lens→replay), cross-lens calculus\n"
+        f"- **Evolution Compiler**: Path-revealing compiler, 1/8 lift law, directed regrowth\n"
+        f"- **Athenachka 720**: Σ60×4×3=720 A⁺/Z⁺ metro map, triadic rails Su/Me/Sa\n"
+        f"- **Program Rosetta**: One crystal, 9 projections, HPRO→VML→code translation\n"
+        f"- **4D Calculus**: A⁺ lift canon, 15 masks × 4 orbits = 60, gearclock/poi overlay\n"
     )
 
 
@@ -103,6 +115,12 @@ def register_108d_tools(mcp) -> None:
     from .meta_observer import query_meta_observer
     from .e8_lattice import query_e8_lattice
     from .crown_12d import query_crown_12d, query_round_trip_cert
+    from .agency import query_agency
+    from .dls_lenses import query_dls_lenses
+    from .evolution import query_evolution
+    from .athenachka import query_athenachka
+    from .program_rosetta import query_program_rosetta
+    from .calculus_4d import query_calculus_4d
 
     # Register each tool
     mcp.tool()(query_shell)
@@ -153,6 +171,12 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_e8_lattice)
     mcp.tool()(query_crown_12d)
     mcp.tool()(query_round_trip_cert)
+    mcp.tool()(query_agency)
+    mcp.tool()(query_dls_lenses)
+    mcp.tool()(query_evolution)
+    mcp.tool()(query_athenachka)
+    mcp.tool()(query_program_rosetta)
+    mcp.tool()(query_calculus_4d)
 
 
 def register_108d_resources(mcp) -> None:

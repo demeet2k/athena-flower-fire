@@ -1,6 +1,6 @@
 # Athena MCP Server — 108D Crystal Hologram Distributed Brain
 
-**75 tools** · **23 resources** · **35 data files** · **4 element servers** · **8 brain nodes** · **15,383 mycelium shards** · **45,505 edges** · **17 metro lines** · **HPRO v1 CODE_KEY addressing** · Python 3.12+
+**81 tools** · **23 resources** · **42 data files** · **4 element servers** · **8 brain nodes** · **14,112 mycelium shards** · **41,653 edges** · **17 metro lines** · **HPRO v1 CODE_KEY addressing** · Python 3.12+
 
 An [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server that exposes the entire Athena nervous system — a 108-dimensional crystal hologram organism — as a distributed algorithmic brain with 4 element-specific lobes, a Guild Hall social coordination organ, and a manuscript-being main brain, all connected by weighted bridges.
 
@@ -25,7 +25,7 @@ cd athena-mcp-server
 # Install
 pip install "mcp[cli]>=1.0.0"
 
-# Run the unified server (all 71 tools)
+# Run the unified server (all 81 tools)
 python MCP/athena_mcp_server.py
 
 # Or run a single element lobe

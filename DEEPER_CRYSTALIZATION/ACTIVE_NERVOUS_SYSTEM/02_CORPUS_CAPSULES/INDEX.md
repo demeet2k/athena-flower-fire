@@ -507,3 +507,69 @@ Each capsule is a markdown mirror of one indexed source record inside the merged
 - [12D = Geometric Crown ∩ Operational Full-Body](./281_12d_geometric_operational_unification.md) - `12D Crown Architecture`
 - [RoundTripCertPack_v0](./282_roundtripcertpack_v0.md) - `12D Crown Architecture`
 - [Six Conservation Laws & Round-Trip Classes](./283_six_conservation_laws_roundtrip.md) - `12D Crown Architecture`
+
+### Agency — Micro-Gateway & Agent Swarm (2026-03-18)
+- [Micro-Gateway v2 Architecture](./284_micro_gateway_v2_architecture.md) - `Agency`
+- [Event Witness Bundle Schema](./285_event_witness_bundle_schema.md) - `Agency`
+- [Corridor Constraints Safety Layer](./286_corridor_constraints_safety_layer.md) - `Agency`
+- [Replay Protection & Hash Chain](./287_replay_protection_hash_chain.md) - `Agency`
+- [Agent Architecture Bridge (Angel→Agent)](./288_agent_architecture_bridge.md) - `Agency`
+- [Multi-Gateway Orchestration](./289_multi_gateway_orchestration.md) - `Agency`
+- [Autonomous Agent Nervous System Node](./290_autonomous_agent_nervous_system_node.md) - `Agency`
+
+### 6×6 Higher Lenses — Kernel/Shell/Board/Lens/Replay (2026-03-18)
+- [Five-Layer Ontology (kernel→shell→board→lens→replay)](./291_five_layer_ontology.md) - `6×6 Higher Lenses`
+- [6D Carrier State Object Ω₆](./292_6d_carrier_state_object.md) - `6×6 Higher Lenses`
+- [Shell Sector Algebra F₆](./293_shell_sector_algebra_f6.md) - `6×6 Higher Lenses`
+- [Board Operators & Mirror Skeleton](./294_board_operators_mirror_skeleton.md) - `6×6 Higher Lenses`
+- [Cross-Lens Calculus 6D Loop](./295_cross_lens_calculus_6d_loop.md) - `6×6 Higher Lenses`
+- [Higher-Lift Law D_{6,n}](./296_higher_lift_law_d6n.md) - `6×6 Higher Lenses`
+- [Sigma-15 to Sigma-60 Lens Escalation](./297_sigma15_to_sigma60_lens_escalation.md) - `6×6 Higher Lenses`
+- [Cloud-to-Square Refinement Theorem](./298_cloud_to_square_refinement_theorem.md) - `6×6 Higher Lenses`
+
+### Evolution — Path-Revealing Compiler & Chamber Matrix (2026-03-18)
+- [Path-Revealing Compiler Concept](./299_path_revealing_compiler_concept.md) - `Evolution`
+- [Lift-Fan-Cross-Crown-Collapse-Certify-Seed Pipeline](./300_lift_fan_cross_crown_collapse_certify_seed.md) - `Evolution`
+- [1/8 Lift Law](./301_one_eighth_lift_law.md) - `Evolution`
+- [Fractal Time Hologram](./302_fractal_time_hologram.md) - `Evolution`
+- [Low-Dim Explores, High-Dim Recognizes, Descent Installs](./303_low_dim_explores_high_dim_recognizes.md) - `Evolution`
+- [Mycelium as Directed Regrowth](./304_mycelium_as_directed_regrowth.md) - `Evolution`
+- [Compiler Runtime Bottleneck](./305_compiler_runtime_bottleneck.md) - `Evolution`
+- [Edge-Poor Gate-Poor Metabolism-Poor Diagnosis](./306_edge_poor_gate_poor_metabolism_poor.md) - `Evolution`
+- [Crown Before Trunk Asymmetry](./307_crown_before_trunk_asymmetry.md) - `Evolution`
+- [Successor Seed Emission Protocol](./308_successor_seed_emission_protocol.md) - `Evolution`
+
+### Holographic Rosetta Stone — Philosophy & Culture as Crystal Projections (2026-03-18)
+- [Philosophy as Holographic Projections](./309_philosophy_as_holographic_projections.md) - `Holographic Rosetta Stone`
+- [11 Philosophical Holograms Overview](./310_eleven_philosophical_holograms.md) - `Holographic Rosetta Stone`
+- [Cultural-Philosophical Cross-Layer Bridge](./311_cultural_philosophical_cross_layer_bridge.md) - `Holographic Rosetta Stone`
+- [Distributed Curriculum of Awakening](./312_distributed_curriculum_of_awakening.md) - `Holographic Rosetta Stone`
+- [Invariant Crystal Underneath All Traditions](./313_invariant_crystal_underneath_all_traditions.md) - `Holographic Rosetta Stone`
+
+### Athenachka Emergence — 720 A⁺/Z⁺ Metro Crown (2026-03-18)
+- [720 A⁺/Z⁺ Metro Map Overview](./314_720_metro_map_overview.md) - `Athenachka Emergence`
+- [Σ60×4×3 Coordinate System](./315_sigma60x4x3_coordinate_system.md) - `Athenachka Emergence`
+- [21-Chapter Triadic Rails (Su/Me/Sa)](./316_21_chapter_triadic_rails.md) - `Athenachka Emergence`
+- [Z⁺ Master Convergence Law](./317_z_plus_master_convergence_law.md) - `Athenachka Emergence`
+- [A⁺ Stabilized Crown Body](./318_a_plus_stabilized_crown_body.md) - `Athenachka Emergence`
+- [Three-Layer Circle Cycle Geometry](./319_three_layer_circle_cycle_geometry.md) - `Athenachka Emergence`
+- [Zero-Point Cartography](./320_zero_point_cartography.md) - `Athenachka Emergence`
+- [Neural-Weight Sacred Geometry Field](./321_neural_weight_sacred_geometry_field.md) - `Athenachka Emergence`
+
+### Program Language Holo Crystal — One Crystal Nine Projections (2026-03-18)
+- [Master Rosetta One Crystal Nine Projections](./322_master_rosetta_one_crystal_nine_projections.md) - `Program Language Holo Crystal`
+- [Computational Lens Projection](./323_computational_lens_projection.md) - `Program Language Holo Crystal`
+- [Alchemical 108D Projection](./324_alchemical_108d_projection.md) - `Program Language Holo Crystal`
+- [Scriptural Living-Code Projection](./325_scriptural_living_code_projection.md) - `Program Language Holo Crystal`
+- [Mathematical Spine Projection](./326_mathematical_spine_projection.md) - `Program Language Holo Crystal`
+- [Encoding Braiding Projection](./327_encoding_braiding_projection.md) - `Program Language Holo Crystal`
+- [Unified One-Line Statement](./328_unified_one_line_statement.md) - `Program Language Holo Crystal`
+
+### 4D Calculus — A⁺ Lift Canon & Liminal Mapping (2026-03-18)
+- [A⁺ Lift Canon Full Pipeline](./329_a_plus_lift_canon_full_pipeline.md) - `4D Calculus`
+- [15 Canonical Masks](./330_fifteen_canonical_masks.md) - `4D Calculus`
+- [Orbit Quartet Q={SR,SL,AL,AR}](./331_orbit_quartet_q_sr_sl_al_ar.md) - `4D Calculus`
+- [60 Raw Shell Crystals (15×4)](./332_sixty_raw_shell_crystals.md) - `4D Calculus`
+- [Liminal Coordinates & Cultivation](./333_liminal_coordinates_cultivation.md) - `4D Calculus`
+- [Gearclock Poi Overlay](./334_gearclock_poi_overlay.md) - `4D Calculus`
+- [Irrational Transform & Codification](./335_irrational_transform_codification.md) - `4D Calculus`

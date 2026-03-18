@@ -41,6 +41,12 @@ _ALL_JSON_FILES = [
     "meta_observer_swarm.json",
     "e8_lattice.json",
     "crown_12d.json",
+    "agency_gateway.json",
+    "dls_6x6_lenses.json",
+    "evolution_compiler.json",
+    "athenachka_720.json",
+    "program_rosetta.json",
+    "calculus_4d.json",
 ]
 
 

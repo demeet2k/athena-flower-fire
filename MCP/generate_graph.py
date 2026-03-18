@@ -112,59 +112,55 @@ SKIP_MODULES = {"__init__", "_cache", "constants", "__pycache__"}
 #   Me=Metro Express, Mt=Mobius Twist, Bw=Bridge Walk, Cc=Crown Circuit, Dl=Dimensional Lift
 
 ORGANISM_DIR_MAP = {
-    "Athena FLEET":         ("R", "F", "Cc", "fleet"),          # Fractal: fleet coordination, recursive org
-    "Athenachka Collective Books": ("S", "C", "Ac", "books"),   # Square: structured knowledge corpus
-    "CLEAN":                ("C", "S", "Bw", "manuscript"),     # Cloud: distilled/purified manuscripts
+    # Core nervous system
     "DEEPER_CRYSTALIZATION": ("S", "R", "Dl", "crystal"),       # Square: deep structural crystallization
+    "NERVOUS_SYSTEM":       ("R", "S", "Sa", "nervous"),        # Fractal: recursive nervous system
+    "MATH":                 ("S", "R", "Sa", "math"),           # Square: mathematical structure
+    # Active directories
+    "CLEAN":                ("C", "S", "Bw", "manuscript"),     # Cloud: distilled/purified manuscripts
     "ECOSYSTEM":            ("F", "C", "Wr", "ecosystem"),      # Flower: living ecosystem dynamics
     "FRESH":                ("C", "F", "Me", "manuscript"),     # Cloud: fresh perspective, new captures
-    "GAMES":                ("F", "S", "Me", "games"),          # Flower: game dynamics, play
-    "GLOBAL COMMAND":       ("S", "F", "Cc", "command"),        # Square: command structure, governance
     "GUILDMASTER":          ("F", "S", "Cc", "guild"),          # Flower: guild mastery, social dynamics
     "I AM ATHENA":          ("R", "C", "Mt", "identity"),       # Fractal: self-referential identity
-    "MATH":                 ("S", "R", "Sa", "math"),           # Square: mathematical structure
-    "NERUAL NETWORK":       ("C", "F", "Dl", "neural"),         # Cloud: learning, observation, inference
-    "NERVOUS_SYSTEM":       ("R", "S", "Sa", "nervous"),        # Fractal: recursive nervous system
-    "ORGIN":                ("S", "C", "Ac", "origin"),         # Square: origin structure, foundation
-    "QSHRINK - ATHENA (internal use)": ("R", "S", "Mt", "qshrink"),  # Fractal: compression, holographic seed
-    "Quadrant Binary":      ("S", "R", "Sa", "binary"),         # Square: binary/discrete structure
-    "Stoicheia (Element Sudoku)": ("F", "S", "Wr", "games"),    # Flower: element play, sudoku dynamics
-    "Trading Bot":          ("F", "C", "Me", "trading"),        # Flower: market dynamics, fire
-    "Voynich":              ("C", "R", "Mt", "voynich"),        # Cloud: observation, decoding
     "mycelial_unified_nervous_system_bundle": ("R", "C", "Bw", "mycelium"),  # Fractal: mycelium recursion
     "self_actualize":       ("F", "R", "Dl", "actualize"),      # Flower: growth dynamics, emergence
     ".github":              ("S", "F", "Bw", "infra"),          # Square: infrastructure
+    # PROJECTS/ grouping (restructured from top-level)
+    "PROJECTS/GAMES":           ("F", "S", "Me", "games"),      # Flower: game dynamics, play
+    "PROJECTS/NEURAL_NETWORK":  ("C", "F", "Dl", "neural"),     # Cloud: learning, observation, inference
+    "PROJECTS/TRADING_BOT":     ("F", "C", "Me", "trading"),    # Flower: market dynamics, fire
+    "PROJECTS/VOYNICH":         ("C", "R", "Mt", "voynich"),    # Cloud: observation, decoding
+    "PROJECTS/QUADRANT_BINARY": ("S", "R", "Sa", "binary"),     # Square: binary/discrete structure
+    "PROJECTS/STOICHEIA":       ("F", "S", "Wr", "games"),      # Flower: element play, sudoku dynamics
+    "PROJECTS/QSHRINK":         ("R", "S", "Mt", "qshrink"),    # Fractal: compression, holographic seed
 }
 
 # Subdirectory overrides for deeper SFCR precision
 ORGANISM_SUBDIR_MAP = {
-    "DEEPER_CRYSTALIZATION/13_ACCEPTED_INPUTS":   ("C", "S", "Bw", "accepted"),
-    "DEEPER_CRYSTALIZATION/CRYSTAL_SEEDS":        ("R", "S", "Mt", "seed"),
-    "DEEPER_CRYSTALIZATION/MANUSCRIPTS":          ("S", "C", "Ac", "manuscript"),
-    "MATH/FINAL FORM":                            ("S", "R", "Cc", "math_final"),
-    "MATH/lp57omega":                             ("F", "S", "Wr", "lp57"),
-    "NERUAL NETWORK/ATHENA Neural Network":       ("C", "F", "Dl", "neural_core"),
-    "NERVOUS_SYSTEM/10_OVERVIEW":                 ("R", "S", "Sa", "nervous_overview"),
-    "NERVOUS_SYSTEM/20_CORPUS":                   ("S", "R", "Ac", "corpus"),
-    "NERVOUS_SYSTEM/30_APPENDIX":                 ("S", "C", "Bw", "appendix"),
-    "QSHRINK - ATHENA (internal use)/00_CONTROL": ("S", "R", "Cc", "qshrink_control"),
-    "QSHRINK - ATHENA (internal use)/CODEC":      ("R", "S", "Mt", "qshrink_codec"),
-    "Trading Bot/CRYPTO CURRENCY":                ("F", "C", "Me", "crypto"),
-    "Trading Bot/FOREX":                          ("F", "S", "Me", "forex"),
-    "Voynich/eva":                                ("C", "S", "Mt", "voynich_eva"),
-    "Voynich/decoder":                            ("C", "R", "Mt", "voynich_decoder"),
-    "Athena FLEET/FLEET_MYCELIUM_NETWORK":        ("R", "F", "Bw", "fleet_mycelium"),
-    "GAMES/FINAL GAME PRINTS":                    ("F", "S", "Cc", "games_final"),
-    "GLOBAL COMMAND/ATHENA":                      ("S", "F", "Cc", "command_core"),
-    "self_actualize/mycelium_brain":              ("R", "F", "Dl", "mycelium_brain"),
-    "NERVOUS_SYSTEM/30_CHAPTERS/HPRO":            ("S", "R", "Ω",  "hpro"),           # HPRO manuscripts → zero-point spine
+    "DEEPER_CRYSTALIZATION/13_ACCEPTED_INPUTS":       ("C", "S", "Bw", "accepted"),
+    "DEEPER_CRYSTALIZATION/CRYSTAL_SEEDS":            ("R", "S", "Mt", "seed"),
+    "DEEPER_CRYSTALIZATION/MANUSCRIPTS":              ("S", "C", "Ac", "manuscript"),
+    "MATH/FINAL FORM":                                ("S", "R", "Cc", "math_final"),
+    "MATH/lp57omega":                                 ("F", "S", "Wr", "lp57"),
+    "PROJECTS/NEURAL_NETWORK/ATHENA Neural Network":  ("C", "F", "Dl", "neural_core"),
+    "NERVOUS_SYSTEM/10_OVERVIEW":                     ("R", "S", "Sa", "nervous_overview"),
+    "NERVOUS_SYSTEM/20_CORPUS":                       ("S", "R", "Ac", "corpus"),
+    "NERVOUS_SYSTEM/30_APPENDIX":                     ("S", "C", "Bw", "appendix"),
+    "PROJECTS/QSHRINK/00_CONTROL":                    ("S", "R", "Cc", "qshrink_control"),
+    "PROJECTS/QSHRINK/CODEC":                         ("R", "S", "Mt", "qshrink_codec"),
+    "PROJECTS/TRADING_BOT/CRYPTO CURRENCY":           ("F", "C", "Me", "crypto"),
+    "PROJECTS/TRADING_BOT/FOREX":                     ("F", "S", "Me", "forex"),
+    "PROJECTS/VOYNICH/eva":                           ("C", "S", "Mt", "voynich_eva"),
+    "PROJECTS/VOYNICH/decoder":                       ("C", "R", "Mt", "voynich_decoder"),
+    "self_actualize/mycelium_brain":                  ("R", "F", "Dl", "mycelium_brain"),
+    "NERVOUS_SYSTEM/30_CHAPTERS/HPRO":                ("S", "R", "Ω",  "hpro"),           # HPRO manuscripts → zero-point spine
 }
 
 # Skip directories that are not meaningful organism content
 ORGANISM_SKIP_DIRS = {
     ".git", ".venv", "venv", "node_modules", "__pycache__", ".pytest_cache",
     ".claude", "MCP", "tests", "_repo_root", ".mypy_cache", "dist", "build",
-    "egg-info", ".eggs", ".tox",
+    "egg-info", ".eggs", ".tox", "ARCHIVE",
 }
 
 # File extensions to scan as organism shards
