@@ -143,6 +143,7 @@ def register_108d_tools(mcp) -> None:
     from .crystal_weights import query_crystal_weights
     from .neural_engine import neural_forward_pass
     from .self_play import run_self_play
+    from .cross_lens import query_cross_lens
 
     # Initialize telemetry singleton
     _telemetry = Telemetry.instance()
@@ -213,6 +214,7 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_crystal_weights)
     mcp.tool()(neural_forward_pass)
     mcp.tool()(run_self_play)
+    mcp.tool()(query_cross_lens)
 
 def register_108d_resources(mcp) -> None:
     """Register all 108D crystal resources onto the MCP server."""
