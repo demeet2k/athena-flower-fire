@@ -734,6 +734,9 @@ class FractalWeightStore:
                     source="gate",
                 )
 
+        # Load doc registry
+        self._doc_registry = data.get("doc_registry", [])
+
         return True
 
     # ── Query helpers ─────────────────────────────────────────────
