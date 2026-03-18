@@ -139,6 +139,7 @@ def register_108d_tools(mcp) -> None:
     from .holographic_embedder import holographic_embed
     from .agent_watcher import query_agent_watcher
     from .quantum_crystal import query_quantum_crystal
+    from .crystal_weights import query_crystal_weights
 
     # Initialize telemetry singleton
     _telemetry = Telemetry.instance()
@@ -206,6 +207,7 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(holographic_embed)
     mcp.tool()(query_agent_watcher)
     mcp.tool()(query_quantum_crystal)
+    mcp.tool()(query_crystal_weights)
 
 def register_108d_resources(mcp) -> None:
     """Register all 108D crystal resources onto the MCP server."""
