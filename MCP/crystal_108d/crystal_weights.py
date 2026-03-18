@@ -629,6 +629,24 @@ class FractalWeightStore:
             if gate_entry:
                 data["gate_matrix"][src_gate] = gate_entry
 
+        # Compact doc registry (only fields needed for forward pass)
+        if self._doc_registry:
+            compact_docs = []
+            for doc in self._doc_registry:
+                compact_docs.append({
+                    "id": doc.get("id", ""),
+                    "display_name": doc.get("display_name", doc.get("name", ""))[:120],
+                    "element": doc.get("element", "Earth"),
+                    "secondary_element": doc.get("secondary_element", ""),
+                    "gate": doc.get("gate", "G00"),
+                    "family": doc.get("family", ""),
+                    "chapters": doc.get("chapters", []),
+                    "appendices": doc.get("appendices", []),
+                    "tokens": doc.get("tokens", [])[:30],
+                    "scores": doc.get("scores", {}),
+                })
+            data["doc_registry"] = compact_docs
+
         # Atomic write via temp file
         tmp_path = path.with_suffix(".tmp")
         tmp_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
