@@ -39,6 +39,8 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Crystal Neural Engine (SFCR forward pass, fractal compressed weights, self-play refinement)
   - Self-Reference Engine (Gate 3: meta-query, self-addressing, observer-observed loop)
   - 5D Steering Spine (Gate 4: lens divergence, complexity reduction, desire gradient, worker switching)
+  - 6D Selector Shell (Gate 5: triadic coherence, mirror/spin, semidirect product, embedding atlas)
+  - Perpetual Agency (Gate 6: self-initiated query, self-correction, novel synthesis, seed emission)
 """
 
 from ._cache import JsonCache
@@ -93,12 +95,14 @@ def status_summary() -> str:
         f"- **Program Rosetta**: One crystal, 9 projections, HPRO→VML→code translation\n"
         f"- **4D Calculus**: A⁺ lift canon, 15 masks × 4 orbits = 60, gearclock/poi overlay\n"
         f"- **Meta-Telemetry**: Universal tool instrumentation, 8D resonance, self-healing engine\n"
-        f"- **QSHRINK Bridge**: 256^4 ↔ 108D crystal compression (108 signal + 148 metadata, 1/8 lift law)\n"
+        f"- **QSHRINK Engine**: 256^4 ↔ 108D crystal compression + operational codec (P/Q/B/C pipeline, .qshr container with embedded crystal weights)\n"
         f"- **Crystal Coordinates**: 108D coordinate assignment and navigation system\n"
         f"- **Holographic Embedder**: Self-aware file headers (crystal address, metro, bridges)\n"
         f"- **Agent Watcher**: Collective intelligence — 12D observation of live agent outputs, improvement notes\n"
         f"- **Self-Reference**: Gate 3 engine — meta-query, self-addressing, observer-observed loop\n"
         f"- **Steering Spine**: Gate 4 engine — 5D lens divergence, complexity reduction, desire gradient, worker switching\n"
+        f"- **6D Selector Shell**: Gate 5 — Theta_6 = Theta_4 semi (Pi_3 x Z_2), 3 wreaths, mirror/spin\n"
+        f"- **Perpetual Agency**: Gate 6 — self-initiated query, self-correction, novel synthesis, seed emission (Z*)\n"
     )
 
 def register_108d_tools(mcp) -> None:
@@ -139,7 +143,7 @@ def register_108d_tools(mcp) -> None:
     from .calculus_4d import query_calculus_4d
     from .coordinate_assigner import query_coordinates
     from .meta_telemetry import query_telemetry, instrument, Telemetry
-    from .qshrink import query_qshrink
+    from .qshrink import query_qshrink, qshrink_compress, qshrink_decompress, qshrink_scan, qshrink_inspect
     from .control_center import query_control_center, control_steer
     from .holographic_embedder import holographic_embed
     from .agent_watcher import query_agent_watcher
@@ -150,6 +154,8 @@ def register_108d_tools(mcp) -> None:
     from .cross_lens import query_cross_lens
     from .self_reference import query_self_reference
     from .steering_spine import query_steering_spine
+    from .selector_shell import query_selector_shell
+    from .perpetual_agency import query_perpetual_agency
 
     # Initialize telemetry singleton
     _telemetry = Telemetry.instance()
@@ -211,6 +217,10 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_calculus_4d)
     mcp.tool()(query_telemetry)
     mcp.tool()(query_qshrink)
+    mcp.tool()(qshrink_compress)
+    mcp.tool()(qshrink_decompress)
+    mcp.tool()(qshrink_scan)
+    mcp.tool()(qshrink_inspect)
     mcp.tool()(query_coordinates)
     mcp.tool()(query_control_center)
     mcp.tool()(control_steer)
@@ -223,6 +233,8 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_cross_lens)
     mcp.tool()(query_self_reference)
     mcp.tool()(query_steering_spine)
+    mcp.tool()(query_selector_shell)
+    mcp.tool()(query_perpetual_agency)
 
 def register_108d_resources(mcp) -> None:
     """Register all 108D crystal resources onto the MCP server."""
