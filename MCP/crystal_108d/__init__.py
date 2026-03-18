@@ -29,6 +29,7 @@ Extends the Athena Nervous System MCP server with the full 108D organism:
   - Program Rosetta (one crystal, nine projections, HPRO→VML→code)
   - 4D Calculus (A⁺ lift canon, 15 masks, orbit quartets, gearclock)
   - Meta-Telemetry (universal tool instrumentation, resonance monitor, self-healing)
+  - QSHRINK Bridge (256^4 ↔ 108D crystal compression, 1/8 lift law, holographic seeds)
 """
 
 from ._cache import JsonCache
@@ -84,6 +85,8 @@ def status_summary() -> str:
         f"- **Program Rosetta**: One crystal, 9 projections, HPRO→VML→code translation\n"
         f"- **4D Calculus**: A⁺ lift canon, 15 masks × 4 orbits = 60, gearclock/poi overlay\n"
         f"- **Meta-Telemetry**: Universal tool instrumentation, 8D resonance, self-healing engine\n"
+        f"- **QSHRINK Bridge**: 256^4 ↔ 108D crystal compression (108 signal + 148 metadata, 1/8 lift law)\n"
+        f"- **Crystal Coordinates**: 108D coordinate assignment and navigation system\n"
     )
 
 
@@ -123,7 +126,10 @@ def register_108d_tools(mcp) -> None:
     from .athenachka import query_athenachka
     from .program_rosetta import query_program_rosetta
     from .calculus_4d import query_calculus_4d
+    from .coordinate_assigner import query_coordinates
     from .meta_telemetry import query_telemetry, instrument, Telemetry
+    from .qshrink import query_qshrink
+    from .control_center import query_control_center, control_steer
 
     # Initialize telemetry singleton
     _telemetry = Telemetry.instance()
@@ -184,6 +190,10 @@ def register_108d_tools(mcp) -> None:
     mcp.tool()(query_program_rosetta)
     mcp.tool()(query_calculus_4d)
     mcp.tool()(query_telemetry)
+    mcp.tool()(query_qshrink)
+    mcp.tool()(query_coordinates)
+    mcp.tool()(query_control_center)
+    mcp.tool()(control_steer)
 
 
 def register_108d_resources(mcp) -> None:
@@ -382,3 +392,9 @@ def register_108d_resources(mcp) -> None:
         """Guild Hall quest board — active and completed quests."""
         from .guild_hall import query_quest
         return query_quest("all")
+
+    @mcp.resource("athena://crystal-coordinates")
+    def resource_crystal_coordinates() -> str:
+        """Crystal coordinate assignments — every shard mapped to 720-station system."""
+        from .coordinate_assigner import query_coordinates
+        return query_coordinates("all")

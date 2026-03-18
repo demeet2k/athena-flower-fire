@@ -23,11 +23,16 @@ from typing import Any
 from mcp.server.fastmcp import FastMCP
 
 # ── Root paths ──────────────────────────────────────────────────────
-ATHENA_ROOT = Path(os.environ.get(
-    "ATHENA_ROOT",
-    str(Path(__file__).resolve().parent.parent)  # MCP/ → repo root
-))
+_file_based_root = Path(__file__).resolve().parent.parent  # MCP/ → repo root
+_env_root = os.environ.get("ATHENA_ROOT")
+ATHENA_ROOT = Path(_env_root) if _env_root else _file_based_root
+
+# Resolve NS_ROOT with fallback: if env-var path doesn't exist, try __file__-based
 NS_ROOT = ATHENA_ROOT / "DEEPER_CRYSTALIZATION" / "ACTIVE_NERVOUS_SYSTEM"
+if not NS_ROOT.exists() and _env_root:
+    # Env var path may be mangled (spaces, encoding); fall back to __file__
+    NS_ROOT = _file_based_root / "DEEPER_CRYSTALIZATION" / "ACTIVE_NERVOUS_SYSTEM"
+    ATHENA_ROOT = _file_based_root
 CHAPTERS_DIR = NS_ROOT / "04_CHAPTERS"
 APPENDICES_DIR = NS_ROOT / "05_APPENDICES"
 CORPUS_DIR = NS_ROOT / "02_CORPUS_CAPSULES"
@@ -829,7 +834,7 @@ def explore_nervous_system(path: str = "", depth: int = 1) -> str:
     """
     target = NS_ROOT / path if path else NS_ROOT
     if not target.exists():
-        return f"[NOT FOUND] {path or 'ACTIVE_NERVOUS_SYSTEM'}"
+        return f"[NOT FOUND] {path or 'ACTIVE_NERVOUS_SYSTEM'} (resolved: {target})"
     if not target.is_dir():
         return _read_file(target)
 

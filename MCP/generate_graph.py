@@ -955,6 +955,313 @@ def build_edges(shards: list[Shard]) -> list[Edge]:
                     metadata={"bridge_type": "organism_family_to_brain", "family": os_shard.family},
                 ))
 
+    # ══════════════════════════════════════════════════════════════════
+    # PHASE 2: Dense connectivity edges (REF, BUILD, MIRROR, BRIDGE, SEEDS)
+    # ══════════════════════════════════════════════════════════════════
+    old_edge_count = len(edges)
+    old_edge_dist = {}
+    for e in edges:
+        old_edge_dist[e.edge_type] = old_edge_dist.get(e.edge_type, 0) + 1
+
+    root = _MCP_DIR.parent
+    # Build indexes for efficient lookup
+    shard_by_id = {s.shard_id: s for s in shards}
+    # Index: filename (no ext) → list of shard_ids
+    stem_to_shards: dict[str, list[str]] = {}
+    for s in shards:
+        stem = s.payload_ref.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+        stem_to_shards.setdefault(stem, []).append(s.shard_id)
+    # Index: family → list of shard_ids
+    family_to_shards: dict[str, list[str]] = {}
+    for s in shards:
+        family_to_shards.setdefault(s.family, []).append(s.shard_id)
+    # Index: directory → list of shard_ids
+    dir_to_shards: dict[str, list[str]] = {}
+    for s in shards:
+        d = s.payload_ref.rsplit("/", 1)[0] if "/" in s.payload_ref else ""
+        dir_to_shards.setdefault(d, []).append(s.shard_id)
+
+    new_edge_set = set()  # deduplicate by (source, target, type)
+    MAX_NEW_EDGES = 5000
+
+    def _add_edge(src_sid, tgt_sid, etype, weight, metadata, medium_cross=False):
+        """Add a new edge if under the cap and not duplicate."""
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            return
+        if src_sid == tgt_sid:
+            return
+        key = (src_sid, tgt_sid, etype)
+        if key in new_edge_set:
+            return
+        new_edge_set.add(key)
+        eid = make_edge_id(src_sid, tgt_sid, etype)
+        edges.append(Edge(
+            edge_id=eid,
+            source_shard=src_sid,
+            target_shard=tgt_sid,
+            edge_type=etype,
+            weight=weight,
+            medium_cross=medium_cross,
+            metadata=metadata,
+        ))
+
+    # ── 1. Content-Reference Edges (REF) ──────────────────────────────
+    # Scan markdown and Python files for references to other files
+    print("  Phase 2: Content-Reference edges (REF) ...")
+    _ref_patterns = [
+        re.compile(r'capsule[_\s]*(\d{1,4})', re.IGNORECASE),    # capsule 315, capsule_042
+        re.compile(r'Ch(?:apter)?[_\s]*(\d{1,3})', re.IGNORECASE),  # Ch11, Chapter 7
+        re.compile(r'["\']([A-Za-z0-9_/.-]+\.(?:py|md|json))["\']'),  # "file.py", 'data.json'
+        re.compile(r'\b([A-Za-z0-9_-]{3,40})\.(?:py|md|json)\b'),  # filename.py bare refs
+    ]
+    ref_count = 0
+    for s in shards:
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        ext = s.payload_ref.rsplit(".", 1)[-1] if "." in s.payload_ref else ""
+        if ext not in ("md", "py"):
+            continue
+        # Resolve the actual file path
+        if s.payload_ref.startswith("organism/"):
+            fp = root / s.payload_ref[len("organism/"):]
+        elif s.payload_ref.startswith("crystal_108d/") or s.payload_ref.startswith("data/") or s.payload_ref.startswith("element_servers/"):
+            fp = _MCP_DIR / s.payload_ref
+        else:
+            fp = _MCP_DIR / s.payload_ref
+        if not fp.exists():
+            continue
+        try:
+            text = fp.read_text(encoding="utf-8", errors="replace")[:8000]  # first 8KB
+        except Exception:
+            continue
+        for pat in _ref_patterns:
+            for m in pat.finditer(text):
+                ref_name = m.group(1) if m.lastindex else m.group(0)
+                # Strip extension to get stem
+                ref_stem = ref_name.rsplit(".", 1)[0].rsplit("/", 1)[-1]
+                # Find target shards with matching stem
+                targets = stem_to_shards.get(ref_stem, [])
+                for tgt in targets[:3]:  # max 3 targets per reference
+                    _add_edge(s.shard_id, tgt, "REF", 0.6,
+                              {"ref_type": "content_reference", "ref_name": ref_name},
+                              medium_cross=(shard_by_id[tgt].medium != s.medium if tgt in shard_by_id else False))
+                    ref_count += 1
+    print(f"    +{ref_count} content-reference REF edges")
+
+    # ── 2. Import-Graph Edges (BUILD) ─────────────────────────────────
+    # Parse Python import statements and map to file shards
+    print("  Phase 2: Import-Graph edges (BUILD) ...")
+    _import_re = re.compile(r'^\s*(?:from\s+([\w.]+)\s+import|import\s+([\w.]+))', re.MULTILINE)
+    build_count = 0
+    py_shards = [s for s in shards if s.payload_ref.endswith(".py")]
+    for s in py_shards:
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        if s.payload_ref.startswith("organism/"):
+            fp = root / s.payload_ref[len("organism/"):]
+        elif s.payload_ref.startswith("crystal_108d/") or s.payload_ref.startswith("data/") or s.payload_ref.startswith("element_servers/"):
+            fp = _MCP_DIR / s.payload_ref
+        else:
+            fp = _MCP_DIR / s.payload_ref
+        if not fp.exists():
+            continue
+        try:
+            text = fp.read_text(encoding="utf-8", errors="replace")[:5000]
+        except Exception:
+            continue
+        for m in _import_re.finditer(text):
+            mod_name = (m.group(1) or m.group(2)).split(".")[-1]  # last component
+            targets = stem_to_shards.get(mod_name, [])
+            for tgt in targets[:2]:
+                if tgt != s.shard_id:
+                    _add_edge(s.shard_id, tgt, "BUILD", 0.75,
+                              {"build_type": "import", "module": mod_name})
+                    build_count += 1
+    print(f"    +{build_count} import-graph BUILD edges")
+
+    # ── 3. Cross-Medium Mirror Edges (MIRROR) ─────────────────────────
+    # Connect files of different types that share the same stem name
+    print("  Phase 2: Cross-Medium Mirror edges (MIRROR) ...")
+    mirror_count = 0
+    for stem_name, sids in stem_to_shards.items():
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        if len(sids) < 2:
+            continue
+        # Group by medium
+        by_medium: dict[str, list[str]] = {}
+        for sid in sids:
+            s = shard_by_id.get(sid)
+            if s:
+                by_medium.setdefault(s.medium, []).append(sid)
+        mediums_present = list(by_medium.keys())
+        if len(mediums_present) < 2:
+            continue
+        # Connect one representative from each medium to each other medium
+        for i in range(len(mediums_present)):
+            for j in range(i + 1, len(mediums_present)):
+                src_list = by_medium[mediums_present[i]]
+                tgt_list = by_medium[mediums_present[j]]
+                for src in src_list[:2]:
+                    for tgt in tgt_list[:2]:
+                        _add_edge(src, tgt, "MIRROR", 0.65,
+                                  {"mirror_type": "cross_medium_stem", "stem": stem_name},
+                                  medium_cross=True)
+                        mirror_count += 1
+    # Also: .json data files → .py query modules in crystal_108d
+    for s in shards:
+        if s.medium == "json" and s.repo == "athena-mcp-server":
+            stem_name = s.payload_ref.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+            py_targets = stem_to_shards.get(stem_name, [])
+            for tgt in py_targets:
+                tgt_s = shard_by_id.get(tgt)
+                if tgt_s and tgt_s.medium == "code":
+                    _add_edge(s.shard_id, tgt, "MIRROR", 0.7,
+                              {"mirror_type": "json_to_query_module", "stem": stem_name},
+                              medium_cross=True)
+                    mirror_count += 1
+    print(f"    +{mirror_count} cross-medium MIRROR edges")
+
+    # ── 4. Cross-Project Bridge Edges (BRIDGE) ────────────────────────
+    # Connect related files across different project directories
+    print("  Phase 2: Cross-Project Bridge edges (BRIDGE) ...")
+    bridge_count = 0
+
+    # 4a. QSHRINK ↔ crystal_108d (compression/encoding theme)
+    qshrink_sids = [s.shard_id for s in shards
+                    if "qshrink" in s.family or "QSHRINK" in s.payload_ref]
+    crystal_encoding_sids = [s.shard_id for s in shards
+                             if s.payload_ref.startswith("crystal_108d/")
+                             and any(k in s.payload_ref.lower() for k in ("inverse", "seed", "mobius", "hologram"))]
+    for qs in qshrink_sids[:20]:
+        for cs in crystal_encoding_sids[:10]:
+            _add_edge(qs, cs, "BRIDGE", 0.5,
+                      {"bridge_type": "qshrink_to_crystal"}, medium_cross=True)
+            bridge_count += 1
+
+    # 4b. NEURAL_NETWORK ↔ crystal_108d (neural/control theme)
+    neural_sids = [s.shard_id for s in shards
+                   if "neural" in s.family or "NEURAL" in s.payload_ref]
+    crystal_control_sids = [s.shard_id for s in shards
+                            if s.payload_ref.startswith("crystal_108d/")
+                            and any(k in s.payload_ref.lower() for k in ("brain", "live_lock", "conservation", "emergence"))]
+    for ns in neural_sids[:20]:
+        for cs in crystal_control_sids[:10]:
+            _add_edge(ns, cs, "BRIDGE", 0.5,
+                      {"bridge_type": "neural_to_crystal"}, medium_cross=True)
+            bridge_count += 1
+
+    # 4c. Corpus capsules ↔ accepted inputs
+    corpus_sids = [s for s in shards if "corpus" in s.family or "20_CORPUS" in s.payload_ref]
+    accepted_sids = [s for s in shards if "accepted" in s.family or "ACCEPTED_INPUT" in s.payload_ref
+                     or "13_ACCEPTED" in s.payload_ref]
+    for cs in corpus_sids[:30]:
+        for ais in accepted_sids[:15]:
+            _add_edge(cs.shard_id, ais.shard_id, "BRIDGE", 0.55,
+                      {"bridge_type": "corpus_to_accepted"}, medium_cross=(cs.medium != ais.medium))
+            bridge_count += 1
+
+    # 4d. Cross-directory same-family bridges
+    # For each family with shards in multiple directories, connect across directories
+    family_by_dir: dict[str, dict[str, list[str]]] = {}  # family → dir → [shard_ids]
+    for s in shards:
+        d = s.payload_ref.rsplit("/", 1)[0] if "/" in s.payload_ref else ""
+        family_by_dir.setdefault(s.family, {}).setdefault(d, []).append(s.shard_id)
+    for family, dirs in family_by_dir.items():
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        dir_keys = list(dirs.keys())
+        if len(dir_keys) < 2:
+            continue
+        # Connect one representative from each directory to the next
+        for i in range(len(dir_keys) - 1):
+            for j in range(i + 1, min(i + 4, len(dir_keys))):  # limit fan-out
+                src = dirs[dir_keys[i]][0]
+                tgt = dirs[dir_keys[j]][0]
+                _add_edge(src, tgt, "BRIDGE", 0.45,
+                          {"bridge_type": "cross_dir_family", "family": family})
+                bridge_count += 1
+    print(f"    +{bridge_count} cross-project BRIDGE edges")
+
+    # ── 5. Seed Edges (SEEDS) ─────────────────────────────────────────
+    # Connect deep core files to their consumers; INDEX files to indexed files
+    print("  Phase 2: Seed edges (SEEDS) ...")
+    seed_count = 0
+
+    # 5a. Core crystal_108d files → all code that imports/references them
+    core_stems = {"constants", "conservation", "metabolism", "shells", "dimensions",
+                  "address", "brain", "live_lock", "angel", "hologram_reading"}
+    core_sids = {}
+    for stem_name in core_stems:
+        candidates = stem_to_shards.get(stem_name, [])
+        for sid in candidates:
+            s = shard_by_id.get(sid)
+            if s and "crystal_108d" in s.payload_ref:
+                core_sids[stem_name] = sid
+                break
+    # Connect core files to all py files that reference them (via BUILD edges already found)
+    # but also to all organism files in matching families
+    for stem_name, core_sid in core_sids.items():
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        # Find the family this core module serves
+        core_s = shard_by_id.get(core_sid)
+        if not core_s:
+            continue
+        family = core_s.family
+        consumers = family_to_shards.get(family, [])
+        for consumer_sid in consumers[:20]:  # cap per core file
+            if consumer_sid != core_sid:
+                _add_edge(core_sid, consumer_sid, "SEEDS", 0.8,
+                          {"seed_type": "core_to_consumer", "core_module": stem_name})
+                seed_count += 1
+
+    # 5b. INDEX.md files → files they index (same directory)
+    index_shards = [s for s in shards if s.payload_ref.lower().endswith("index.md")
+                    or s.payload_ref.lower().endswith("readme.md")]
+    for idx_s in index_shards:
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        idx_dir = idx_s.payload_ref.rsplit("/", 1)[0] if "/" in idx_s.payload_ref else ""
+        siblings = dir_to_shards.get(idx_dir, [])
+        for sib_sid in siblings[:15]:
+            if sib_sid != idx_s.shard_id:
+                _add_edge(idx_s.shard_id, sib_sid, "SEEDS", 0.7,
+                          {"seed_type": "index_to_indexed"})
+                seed_count += 1
+
+    # 5c. Manifest/config files → same-directory files
+    manifest_shards = [s for s in shards
+                       if any(k in s.payload_ref.lower() for k in ("manifest", "config", "setup", "package.json"))]
+    for ms in manifest_shards:
+        if len(new_edge_set) >= MAX_NEW_EDGES:
+            break
+        ms_dir = ms.payload_ref.rsplit("/", 1)[0] if "/" in ms.payload_ref else ""
+        siblings = dir_to_shards.get(ms_dir, [])
+        for sib_sid in siblings[:10]:
+            if sib_sid != ms.shard_id:
+                _add_edge(ms.shard_id, sib_sid, "SEEDS", 0.65,
+                          {"seed_type": "manifest_to_module"})
+                seed_count += 1
+    print(f"    +{seed_count} seed SEEDS edges")
+
+    # ── Phase 2 Summary ──────────────────────────────────────────────
+    new_edge_count = len(edges) - old_edge_count
+    new_edge_dist = {}
+    for e in edges[old_edge_count:]:
+        new_edge_dist[e.edge_type] = new_edge_dist.get(e.edge_type, 0) + 1
+    print(f"\n  Phase 2 total: +{new_edge_count} new edges (cap={MAX_NEW_EDGES})")
+    print(f"  Edge distribution BEFORE Phase 2: {old_edge_dist}")
+    print(f"  Edge distribution FROM Phase 2:   {new_edge_dist}")
+    final_dist = {}
+    for e in edges:
+        final_dist[e.edge_type] = final_dist.get(e.edge_type, 0) + 1
+    print(f"  Edge distribution AFTER Phase 2:  {final_dist}")
+    n = len(shards)
+    max_edges = n * (n - 1) / 2
+    density = len(edges) / max_edges * 100 if max_edges > 0 else 0
+    print(f"  Graph density: {density:.4f}% ({len(edges)} edges / {max_edges:.0f} possible)")
+
     return edges
 
 

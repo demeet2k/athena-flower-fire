@@ -47,6 +47,7 @@ _ALL_JSON_FILES = [
     "athenachka_720.json",
     "program_rosetta.json",
     "calculus_4d.json",
+    "crystal_coordinates.json",
 ]
 
 
