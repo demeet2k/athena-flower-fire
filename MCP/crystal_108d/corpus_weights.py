@@ -154,6 +154,14 @@ LENS_DOMAINS = {
         # Weight & matrix (continuous field mathematics)
         "weight", "matrix", "tensor", "optimize",
         "loss", "train", "learning", "training",
+        # Corpus-frequent Cloud-affine words (awakening, integration, surface)
+        "awakening", "awakened", "awaken", "integration", "integrate",
+        "surface", "path", "journey", "process", "transition",
+        "gate", "gateway", "threshold", "admission", "admissible",
+        "receipt", "ledger", "record", "event", "log",
+        "thread", "fiber", "strand", "weave", "knot",
+        "command", "directive", "instruction", "protocol",
+        "tome", "corpus", "body", "vessel", "container",
     },
 
     # ── R = Fractal / Air ───────────────────────────────────────────
