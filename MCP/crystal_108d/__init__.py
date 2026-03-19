@@ -119,6 +119,7 @@ def status_summary() -> str:
         f"- **Realtime Inverse**: Dual-execution forward+inverse, Mobius flip, conservation drift < 0.001\n"
         f"- **Fractal Recursion**: R-dimension activation, recursive self-observation, fixed-point iteration\n"
         f"- **Nested Swarm**: 4^N observer hierarchy, bottom-up aggregation, liminal sub-swarms\n"
+        f"- **Sandbox Observer**: Container self-observation (15D: 12D + resource/latency/throughput), recursive efficiency engine, successor seeds at epoch=57\n"
     )
 
 def register_108d_tools(mcp) -> None:
@@ -176,12 +177,23 @@ def register_108d_tools(mcp) -> None:
     from .steering_spine import query_steering_spine
     from .selector_shell import query_selector_shell
     from .perpetual_agency import query_perpetual_agency
+    from .harmonic_resonance import query_harmonic_resonance
+    from .mycelium_emergence import query_mycelium_emergence
+    from .crown_density import query_crown_density
+    from .omega_tunneling import query_omega_tunneling
+    from .crown_transform_gate import query_crown_transform_gate
+    from .absolute_convergence import query_absolute_convergence
     from .observer_swarm import spawn_observer_swarm, run_swarm_observation, query_swarm_status
     from .self_play import run_swarm_self_play
     from .corpus_weights import query_corpus_weights
     from .weight_feedback import query_weight_feedback
     from .kc27_naming import query_kc27_naming
     from .bridge_transport import query_bridge_transport
+    from .hive_ledger import (
+        hive_ledger_write, hive_ledger_read,
+        hive_ledger_broadcasts, hive_ledger_ack, hive_ledger_status,
+    )
+    from .time_fractal import query_time_fractal
 
     # 4D Upgrade modules (Octave Loop)
     from .inverse_engine import get_inverse_engine
@@ -234,10 +246,16 @@ def register_108d_tools(mcp) -> None:
         geometric_checkpoint, geometric_resume, momentum_status,
         query_cross_lens, query_self_reference, query_steering_spine,
         query_selector_shell, query_perpetual_agency,
+        query_harmonic_resonance, query_mycelium_emergence,
+        query_crown_density, query_omega_tunneling,
+        query_crown_transform_gate, query_absolute_convergence,
         spawn_observer_swarm, run_swarm_observation, query_swarm_status,
         run_swarm_self_play, query_corpus_weights, query_weight_feedback,
         query_kc27_naming,
         query_bridge_transport,
+        query_time_fractal,
+        hive_ledger_write, hive_ledger_read,
+        hive_ledger_broadcasts, hive_ledger_ack, hive_ledger_status,
     ]
 
     for tool_fn in _ALL_TOOLS:
@@ -323,6 +341,15 @@ def register_108d_tools(mcp) -> None:
             return _json.dumps(data, indent=2)
         except Exception as exc:
             return f"Error reading hologram: {exc}"
+
+    # ------------------------------------------------------------------
+    # Sandbox Observer — meta-observer for container self-observation
+    # ------------------------------------------------------------------
+    try:
+        from .sandbox_mcp import register_sandbox_tools
+        register_sandbox_tools(mcp)
+    except Exception:
+        pass  # Non-fatal: sandbox observer is enhancement, not requirement
 
     # ------------------------------------------------------------------
     # Background processes: continuous self-play + observer swarm

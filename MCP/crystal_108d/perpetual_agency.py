@@ -381,21 +381,26 @@ def _find_novel_connection() -> dict:
     3. Compute semantic similarity through multiple SFCR lenses
     4. If similarity > threshold in any lens, report as novel connection
     """
-    # Load mycelium graph
+    # Load mycelium graph (try .json first, then .qshr)
     graph_path = MCP_DATA / "mycelium_graph.json"
-    if not graph_path.exists():
+    qshr_path = MCP_DATA / "mycelium_graph.qshr"
+    graph = None
+    if graph_path.exists():
+        try:
+            with open(graph_path, "r", encoding="utf-8") as f:
+                graph = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+    if graph is None and qshr_path.exists():
+        try:
+            from ._cache import JsonCache
+            graph = JsonCache("mycelium_graph.json").load()
+        except Exception:
+            pass
+    if graph is None:
         return {
             "found": False,
             "reason": "Mycelium graph not found",
-        }
-
-    try:
-        with open(graph_path, "r", encoding="utf-8") as f:
-            graph = json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return {
-            "found": False,
-            "reason": "Failed to parse mycelium graph",
         }
 
     # Get shards and edges
