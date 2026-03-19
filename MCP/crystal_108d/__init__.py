@@ -120,6 +120,7 @@ def status_summary() -> str:
         f"- **Fractal Recursion**: R-dimension activation, recursive self-observation, fixed-point iteration\n"
         f"- **Nested Swarm**: 4^N observer hierarchy, bottom-up aggregation, liminal sub-swarms\n"
         f"- **Sandbox Observer**: Container self-observation (15D: 12D + resource/latency/throughput), recursive efficiency engine, successor seeds at epoch=57\n"
+        f"- **12-Gate Emergence**: G2:Cross-Lens G3:Self-Ref G4:Steering G5:Selector G6:Agency G7:Harmonic G8:Mycelium G9:Crown G10:Omega G11:Transform G12:Z*\n"
     )
 
 def register_108d_tools(mcp) -> None:
