@@ -1,0 +1,51 @@
+{
+  "authority_domain": [
+    "elemental-fire-projection"
+  ],
+  "build": {
+    "command": null,
+    "status": "unknown"
+  },
+  "contract_release": "KC144.MYC.P04.DRAFT1",
+  "current_version": "git:79aa18e",
+  "default_branch": "master",
+  "element": "fire",
+  "entry_points": [
+    "README.md"
+  ],
+  "federation_status": "hold",
+  "kc_projections": [
+    "AB.10.FLOWER",
+    "SFCR.FIRE"
+  ],
+  "privacy": {
+    "contract_public": true,
+    "raw_corpus_allowed": false,
+    "secrets_allowed": false
+  },
+  "projection_mode": "UNPROVEN",
+  "repository": "demeet2k/athena-flower-fire",
+  "repository_id": "1183483497",
+  "return": {
+    "allowed_defect": [
+      "projection-mode-unproven",
+      "shared-snapshot-ancestry"
+    ],
+    "class": "provenance_only",
+    "required_carry": [
+      "projection_profile",
+      "source_commit",
+      "output_tree_hash"
+    ],
+    "target": "athena://resource/athena.federation.root@2.0.0-p04"
+  },
+  "role": "elemental-view",
+  "schema": "athena.repository-portal/v2",
+  "source_commit": "79aa18ea7c26d21dbbbb5dbfe8f26e8deff719f4",
+  "successor_seed": "P05::ELEMENTAL-PROJECTION-VERDICT",
+  "test": {
+    "command": null,
+    "status": "unknown"
+  },
+  "visibility": "public"
+}
